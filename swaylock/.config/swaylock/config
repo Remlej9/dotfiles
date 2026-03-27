@@ -1,0 +1,44 @@
+# ~/.config/swaylock/config
+daemonize
+screenshots
+clock
+indicator
+indicator-radius=80
+indicator-thickness=4
+
+# Better Blur (Deep and smooth)
+effect-blur=15x3
+effect-vignette=0.2:0.5
+
+# Minimal Color Palette (White & Transparent Gray)
+line-color=00000000
+separator-color=00000000
+
+# The Center (Semi-transparent black)
+inside-color=00000033
+inside-ver-color=00000033
+inside-wrong-color=33000044
+inside-clear-color=00000033
+
+# The Ring (Subtle White/Gray)
+ring-color=ffffff55
+ring-ver-color=ffffff88
+ring-wrong-color=ff5555bb
+ring-clear-color=ffffff33
+
+# The Feedback (Typing highlights)
+key-hl-color=ffffffcc
+bs-hl-color=ff5555bb
+
+# Text/Clock Styling
+text-color=ffffffff
+time-color=ffffffff
+date-color=ffffffff
+layout-color=ffffffff
+text-ver-color=ffffffff
+text-wrong-color=ffffffff
+text-clear-color=ffffffff
+text-caps-lock-color=ffffffff
+timestr=%H:%M
+datestr=%A, %B %d
+font=JetBrainsMono Nerd Font
