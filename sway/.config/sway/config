@@ -8,6 +8,7 @@
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
+set $altmod Mod1
 # Home row direction keys, like vim
 # set $left h
 # set $down j
@@ -75,6 +76,7 @@ input type:touchpad {
 	accel_profile "flat"
 	pointer_accel 0.7
 	scroll_factor 0.2
+    dwt disabled
 }
 
 input * {
@@ -107,6 +109,9 @@ input * {
     # Reload the configuration file
     bindsym $mod+Shift+c reload
 
+    # Sleep on lid close
+    bindswitch --locked lid:on exec systemctl suspend
+
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
@@ -132,6 +137,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
+    bindsym $altmod+Tab focus next
 
     # Move the focused window with the same, but add Shift
     # bindsym $mod+Shift+$left move left
@@ -198,6 +204,9 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+
+    # Move focus to the child container
+    bindsym $mod+c focus child
 #
 # Scratchpad:
 #
@@ -264,6 +273,15 @@ bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 exec iwgtk -i
 exec swaync
 
+exec whatpulse
+
+# 1. Catch the window when it opens and "Mark" it as 'wp'
+for_window [class="(?i)whatpulse"] mark "wp", move scratchpad
+for_window [app_id="(?i)whatpulse"] mark "wp", move scratchpad
+
+# 2. Use a single keybind to toggle the window by its Mark
+bindsym $mod+Shift+w [con_mark="wp"] scratchpad show
+
 # Start the clipboard manager daemon
 exec wl-paste --type text --watch cliphist store 
 exec wl-paste --type image --watch cliphist store
@@ -275,4 +293,4 @@ bindsym $mod+Shift+v exec cliphist list | wofi --dmenu | cliphist decode | wl-co
 # Lock screen
 bindsym $mod+l exec swaylock
 
-include /etc/sway/config.d/*
+include /etc/sway/config.d/*r
