@@ -243,7 +243,7 @@
 					"file": "/home/rem/.config/waybar/style.css",
 					"settings":
 					{
-						"buffer_size": 2769,
+						"buffer_size": 2793,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					},
@@ -2819,27 +2819,60 @@
 							},
 							"BQAAABoGAAAAAAAAGwYAAAAAAAAAAAAAGwYAAAAAAAAcBgAAAAAAAAAAAAAcBgAAAAAAAB0GAAAAAAAAAAAAAB0GAAAAAAAAHgYAAAAAAAAAAAAAHgYAAAAAAAAfBgAAAAAAAAAAAAA",
 							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAaBgAAAAAAABoGAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							5,
+							1,
+							"insert",
+							{
+								"characters": "\n"
+							},
+							"AQAAAEgGAAAAAAAASQYAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAASAYAAAAAAABIBgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							6,
+							1,
+							"left_delete",
+							null,
+							"AQAAAEgGAAAAAAAASAYAAAAAAAABAAAACg",
+							"AQAAAAAAAAABAAAASQYAAAAAAABJBgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							7,
+							1,
+							"insert",
+							{
+								"characters": "\n#"
+							},
+							"AgAAAEgGAAAAAAAASQYAAAAAAAAAAAAASQYAAAAAAABKBgAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAASAYAAAAAAABIBgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							8,
+							1,
+							"paste",
+							null,
+							"AQAAAEoGAAAAAAAAXwYAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAASgYAAAAAAABKBgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							9,
+							1,
+							"insert",
+							{
+								"characters": ","
+							},
+							"AQAAAF8GAAAAAAAAYAYAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAXwYAAAAAAABfBgAAAAAAAAAAAAAAAPC/"
 						]
 					]
 				},
 				{
 					"file": "/home/rem/.config/waybar/config.jsonc",
-					"redo_stack":
-					[
-						[
-							3,
-							1,
-							"insert",
-							{
-								"characters": "3"
-							},
-							"AQAAAGQfAAAAAAAAZB8AAAAAAAABAAAAMw",
-							"AQAAAAAAAAABAAAAZR8AAAAAAABlHwAAAAAAAAAAAAAAAPC/"
-						]
-					],
 					"settings":
 					{
-						"buffer_size": 8123,
+						"buffer_size": 8164,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					},
@@ -3596,6 +3629,88 @@
 							null,
 							"AgAAAAIBAAAAAAAAAgEAAAAAAAAEAAAAICAgIAIBAAAAAAAAAgEAAAAAAAAEAAAAICAgIA",
 							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAASAQAAAAAAABIBAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							18,
+							1,
+							"insert",
+							{
+								"characters": "\n"
+							},
+							"AQAAADwCAAAAAAAARQIAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAPAIAAAAAAAA8AgAAAAAAAAAAAAAAgGZA"
+						],
+						[
+							19,
+							1,
+							"paste",
+							null,
+							"AQAAAEUCAAAAAAAAWgIAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAARQIAAAAAAABFAgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							20,
+							1,
+							"insert",
+							{
+								"characters": ","
+							},
+							"AQAAAFoCAAAAAAAAWwIAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAWgIAAAAAAABaAgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							22,
+							1,
+							"insert",
+							{
+								"characters": "\""
+							},
+							"AQAAAFoCAAAAAAAAWwIAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAWgIAAAAAAABaAgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							24,
+							1,
+							"insert",
+							{
+								"characters": "\""
+							},
+							"AQAAAEUCAAAAAAAARgIAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAARQIAAAAAAABFAgAAAAAAAAAAAAAAAFRA"
+						],
+						[
+							31,
+							1,
+							"cut",
+							null,
+							"AQAAAD0CAAAAAAAAPQIAAAAAAAAhAAAAICAgICAgICAicG93ZXItcHJvZmlsZXMtZGFlbW9uIiwK",
+							"AQAAAAAAAAABAAAAPQIAAAAAAABeAgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							34,
+							1,
+							"insert",
+							{
+								"characters": "\n"
+							},
+							"AQAAAE8CAAAAAAAAWAIAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAATwIAAAAAAABPAgAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							37,
+							1,
+							"paste",
+							null,
+							"AQAAAFACAAAAAAAAcQIAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAUAIAAAAAAABQAgAAAAAAAAAAAAAAAAAA"
+						],
+						[
+							38,
+							1,
+							"left_delete",
+							null,
+							"AQAAAHACAAAAAAAAcAIAAAAAAAABAAAACg",
+							"AQAAAAAAAAABAAAAcQIAAAAAAABxAgAAAAAAAAAAAAAAAPC/"
 						]
 					]
 				},
@@ -4147,15 +4262,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 2769,
+								"buffer_size": 2793,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1567,
-										1567
+										1632,
+										1632
 									]
 								],
 								"settings":
@@ -4168,25 +4283,26 @@
 								"translation.y": 1042.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 3,
+							"stack_index": 1,
 							"stack_multiselect": false,
 							"type": "text"
 						},
 						{
 							"buffer": 1,
 							"file": "/home/rem/.config/waybar/config.jsonc",
+							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 8123,
+								"buffer_size": 8164,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										7023,
-										7023
+										408,
+										408
 									]
 								],
 								"settings":
@@ -4196,17 +4312,16 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 5543.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 0,
 							"stack_multiselect": false,
 							"type": "text"
 						},
 						{
 							"buffer": 2,
 							"file": "/home/rem/.config/waybar/scripts/tailscale.sh",
-							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
@@ -4231,7 +4346,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 2,
 							"stack_multiselect": false,
 							"type": "text"
 						},
@@ -4262,7 +4377,7 @@
 								"translation.y": 3835.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 2,
+							"stack_index": 3,
 							"stack_multiselect": false,
 							"type": "text"
 						}

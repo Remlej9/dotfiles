@@ -58,6 +58,7 @@ window#waybar {
 #tray,
 #custom-notification,
 #custom-tailscale,
+#power-profiles-daemon,
 #custom-power {
     background: @background;
     color: @foreground;

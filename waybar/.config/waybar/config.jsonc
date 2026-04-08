@@ -27,6 +27,7 @@
         "memory",
         "disk",
         "battery",
+        "power-profiles-daemon",        
         "clock",
         "custom/notification",
         "custom/power"
