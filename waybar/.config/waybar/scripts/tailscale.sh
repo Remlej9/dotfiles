@@ -49,20 +49,20 @@ get_tooltip() {
         return
     fi
     
-    local hostname=$(echo "$status_json" | jq -r '.Self.HostName // "Unknown"')
+    local hostname=$(echo "$status_json" | jq -r '.Self.DNSName // .Self.Hostname // "Unknown" | split(".")[0]')
     local tooltip="<b>Hostname: <span foreground='#87CEEB'>$hostname</span></b>\n"
     
     # Add exit node status to the tooltip
     local has_exit_node=$(echo "$status_json" | jq -r 'if .ExitNodeStatus != null then "true" else "false" end')
     if [[ "$has_exit_node" == "true" ]]; then
-        tooltip+="\n<b>Routing:</b> <span foreground='#00ff00'>Using Exit Node 󰄬</span>\n"
+        tooltip+="<b>Routing:</b> <span foreground='#00ff00'>Using Exit Node 󰄬</span>\n"
     else
-        tooltip+="\n<b>Routing:</b> Standard\n"
+        tooltip+="<b>Routing:</b> Standard\n"
     fi
 
-    tooltip+="\nPeers:\n"
+    tooltip+="\nPeers:"
     
-    local peers=$(echo "$status_json" | jq -r '.Peer // {} | to_entries[] | "\(.value.HostName):\(.value.Online)"' | sort)
+    local peers=$(echo "$status_json" | jq -r '.Peer // {} | to_entries[] | "\((.value.DNSName // .value.HostName) | split(".")[0]):\(.value.Online)"' | sort)
     
     if [[ -n "$peers" ]]; then
         while IFS=: read -r peer_name peer_online; do
