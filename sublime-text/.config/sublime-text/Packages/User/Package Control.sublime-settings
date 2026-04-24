@@ -2,6 +2,8 @@
 	"bootstrapped": true,
 	"installed_packages":
 	[
+		"LSP",
+		"LSP-copilot",
 		"One Dark Material - Theme",
 		"Package Control",
 	],

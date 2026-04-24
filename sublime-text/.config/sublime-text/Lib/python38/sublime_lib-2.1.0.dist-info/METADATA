@@ -1,0 +1,95 @@
+Metadata-Version: 2.4
+Name: sublime_lib
+Version: 2.1.0
+Summary: Utility library for frequently used functionality in Sublime Text
+Author: FichteFoll, Thom1729
+License: MIT License
+        
+        Copyright (c) 2018 Thomas Smith
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# sublime_lib
+
+A utility library for Sublime Text, 
+providing a variety of convenience features.
+
+## Installation
+
+To make use of sublime_lib in a package...
+
+1. declare it as [dependency](https://packagecontrol.io/docs/dependencies):
+
+   Create a file named `dependencies.json`
+   with the following contents in package's root directory:
+
+   ```json
+   {
+       "*": {
+           "*": [
+               "sublime_lib"
+           ]
+       }
+   }
+   ```
+
+   Open _Command Palette_ and run `Package Control: Satisfy Libraries`
+   to ensure sublime_lib is installed and available for use.
+
+2. Import sublime_lib in plugins, which want to make use of it.
+
+   ```python
+   import sublime_lib
+   ```
+
+## Features
+
+For complete documentation of all features,
+see the [API documentation](https://sublimetext.github.io/sublime_lib/).
+
+Highlights include:
+
+- [`ActivityIndicator`](https://sublimetext.github.io/sublime_lib/#activity-indicator) context manager to indicate background activity via status bar.
+- [`ResourcePath`](https://sublimetext.github.io/sublime_lib/#sublime_lib.ResourcePath), a [pathlib.Path](https://docs.python.org/3/library/pathlib.html) inspired representation of ST's resource paths,
+  with methods to convert from and to filesystem paths.
+- [`SettingsDict`](https://sublimetext.github.io/sublime_lib/modules/sublime_lib.settings_dict.html) provides a standard Python `dict` inspired interface for `sublime.Settings` objects.
+- [`OutputPanel`](https://sublimetext.github.io/sublime_lib/modules/sublime_lib.output_panel.html), extending `ViewStream` to provide additional functionality for output panel views.
+- [`ViewStream`](https://sublimetext.github.io/sublime_lib/modules/sublime_lib.view_stream.html), a standard [Python IO stream](https://docs.python.org/3/library/io.html#io.TextIOBase) wrapping a `sublime.View` object
+
+### Deprecated
+
+The [`flags` submodule](https://sublimetext.github.io/sublime_lib/#module-sublime_lib.flags) is deprecated in favour of native API, available as of ST4135.
+
+The [`syntax` submodule](https://sublimetext.github.io/sublime_lib/modules/sublime_lib.syntax.html), is marked deprecated in favour of native API functions, available as of ST4.
+
+## Releasing a new version
+
+1. Create a tag in the format `v<major>.<minor>.<patch>`
+2. Push the tag to origin.
+
+A GitHub action should be created that builds a WHEEL file,
+creates a release for this tag
+and attaches the WHEEL file as an artefact.
