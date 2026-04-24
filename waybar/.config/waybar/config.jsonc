@@ -32,21 +32,20 @@
         "custom/notification",
         "custom/power"
     ],
-    // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
     //     "all-outputs": true,
     //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
+    //     "format": "{windows}",
+    //     "format-window-separator": " |",
+    //     "window-rewrite-default": "",
+    //     "window-rewrite": {
+    //         "class<firefox>": "",
+    //         "class<kitty>": "",
+    //         "class<discord>": "",
+    //         "class<sublime_text>": "",
+    //         "class<org.telegram.desktop>": "",
+    //         "class<obsidian>": "",
     //     }
     // },
     "keyboard-state": {
@@ -117,10 +116,14 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%Y-%m-%d}",
+        "calendar": {
+            "iso8601": true,
+            "weeks-pos": "right"
+        }
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}% ",
         "tooltip": false
     },
     "memory": {

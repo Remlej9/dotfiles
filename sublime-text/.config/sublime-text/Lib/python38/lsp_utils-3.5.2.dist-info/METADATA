@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: lsp-utils
+Version: 3.5.2
+Summary: Library with LSP-related utilities for Sublime Text 
+Author: rchl
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# LSP utilities for Package Control
+
+Module with LSP-related utilities for Sublime Text.
+
+📘 [Documentation](https://sublimelsp.github.io/lsp_utils/)
+
+## How to use
+
+1. Create a `dependencies.json` file in your package root with the following contents:
+
+```js
+{
+   "*": {
+      "*": [
+         "lsp_utils",
+         "sublime_lib"
+      ]
+   }
+}
+```
+
+2. Run the **Package Control: Satisfy Dependencies** command via the _Command Palette_.
+
+See also [Documentation on Dependencies](https://packagecontrol.io/docs/dependencies)
