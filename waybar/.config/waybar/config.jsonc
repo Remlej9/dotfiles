@@ -2,11 +2,11 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 36,
+    "height": 0,
     "spacing": 0,
-    "margin-top": 5,
-    "margin-left": 10,
-    "margin-right": 10,
+    "margin-top": 2,
+    "margin-left": 0,
+    "margin-right": 0,
     // Choose the order of the modules
     "modules-left": [
         "custom/fuzzel",

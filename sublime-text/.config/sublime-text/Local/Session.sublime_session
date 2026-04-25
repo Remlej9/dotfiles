@@ -1,18 +1,56 @@
 {
 	"file_history":
 	[
+		"/home/rem/dotfiles/kitty/.config/kitty/kitty.conf",
+		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/curl.php",
+		"/home/rem/ctf/SNHT2026FINAL/Meck/handout/flagout.c",
+		"/home/rem/ctf/SNHT2026FINAL/Meck/handout.zip",
+		"/home/rem/ctf/SNHT2026FINAL/Meck/handout/app.py",
+		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Dockerfile",
+		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/token_middleware.php",
+		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/health.php",
+		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
+		"/home/rem/ctf/SNHT2026/ContentType/solve.py",
+		"/home/rem/ctf/SNHT2026/backup/chall/solve.py",
+		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/nginx/nginx.conf",
+		"/home/rem/ctf/SNHT2026FINAL/Insanitizer/bot/bot.js",
+		"/home/rem/ctf/SNHT2026FINAL/Insanitizer/nginx/nginx.conf",
+		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/chall/www/message.php",
+		"/home/rem/ctf/SNHT2026FINAL/JAAS/container/.FLAG.txt",
+		"/home/rem/ctf/SNHT2026FINAL/JAAS/container/server.js",
+		"/home/rem/ctf/SNHT2026FINAL/RandomInit/random-init.go",
+		"/home/rem/ctf/SNHT2026FINAL/RandomInit/solve.py",
+		"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/server.py",
+		"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/solve.",
+		"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/static/index.html",
+		"/home/rem/ctf/SNHT2026FINAL/JAAS/deconstruct.js",
+		"/home/rem/ctf/SNHT2026FINAL/RandomInit/output.txt",
+		"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve",
+		"/home/rem/ctf/SNHT2026FINAL/PowerTower/net-powpowpow.go",
+		"/home/rem/Downloads/boot.py",
+		"/home/rem/.config/sway/config",
+		"/home/rem/ctf/SNHT2026FINAL/JAAS/container/deconstruct.js",
+		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/docker-compose.yml",
+		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.html",
+		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/notes.txt",
+		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.js",
+		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/solve.py",
+		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/.env",
+		"/home/rem/Downloads/output.txt",
+		"/home/rem/ctf/SNHT2026FINAL/nyheter/solve.py",
+		"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/mariadb/init.sql.example",
+		"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/chall/solve.py",
+		"/home/rem/.config/kitty/kitty.conf",
+		"/home/rem/.config/waybar/config.jsonc",
 		"/home/rem/Downloads/doc_data.txt",
 		"/home/rem/.config/swaylock/config",
-		"/home/rem/.config/sway/config",
 		"/etc/default/grub",
 		"/home/rem/.config/waybar/scripts/tailscale.sh",
 		"/home/rem/.config/waybar/style.css",
-		"/home/rem/.config/waybar/config.jsonc",
 		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/Package Control/Package Control.sublime-settings",
 		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/User/Package Control.sublime-settings",
 		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap",
 		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/Default/Default (Linux).sublime-keymap",
-		"/home/rem/.config/kitty/kitty.conf",
 		"/home/rem/.config/waybar/power_menu.xml",
 		"/home/rem/Downloads/eduroam-linux-LUoT.py",
 		"/home/rem/.config/kitty/kitty",
@@ -29,15 +67,17 @@
 	],
 	"folder_history":
 	[
-		"/home/rem/ctf/SNHT2026/UUID Guesser",
 		"/home/rem/.config",
-		"/home/rem/.config/waybar",
-		"/home/rem/.config/sway"
+		"/home/rem/.config/sway",
+		"/home/rem/ctf",
+		"/home/rem/ctf/SNHT2026FINAL",
+		"/home/rem/ctf/SNHT2026/UUID Guesser",
+		"/home/rem/.config/waybar"
 	],
 	"last_version": 4200,
-	"last_window_id": 18,
+	"last_window_id": 26,
 	"log_indexing": false,
-	"next_update_check": 1777100895,
+	"next_update_check": 1777187295,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -66,6 +106,14 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"BAS",
+						"Set Syntax: Bash"
+					],
+					[
+						"python",
+						"Set Syntax: Python"
+					],
 					[
 						"disable p",
 						"Package Control: Disable Package"
@@ -132,12 +180,49 @@
 			},
 			"file_history":
 			[
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/Dockerfile",
+				"/home/rem/dotfiles/kitty/.config/kitty/kitty.conf",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/curl.php",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/flagout.c",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout.zip",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/app.py",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Dockerfile",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/token_middleware.php",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/health.php",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/nginx/nginx.conf",
+				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/bot/bot.js",
+				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/nginx/nginx.conf",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/chall/www/message.php",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/.FLAG.txt",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/server.js",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/random-init.go",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/server.py",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/solve.",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/static/index.html",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/deconstruct.js",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/output.txt",
+				"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve",
+				"/home/rem/ctf/SNHT2026FINAL/PowerTower/net-powpowpow.go",
+				"/home/rem/Downloads/boot.py",
+				"/home/rem/.config/sway/config",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/deconstruct.js",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/docker-compose.yml",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.html",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/notes.txt",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.js",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/.env",
+				"/home/rem/Downloads/output.txt",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/mariadb/init.sql.example",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/chall/solve.py",
+				"/home/rem/.config/waybar/config.jsonc",
 				"/home/rem/Downloads/doc_data.txt",
 				"/home/rem/.config/swaylock/config",
-				"/home/rem/.config/sway/config",
 				"/etc/default/grub",
 				"/home/rem/.config/waybar/scripts/tailscale.sh",
-				"/home/rem/.config/waybar/config.jsonc",
 				"/home/rem/.config/waybar/style.css",
 				"/home/rem/.config/kitty/kitty.conf",
 				"/home/rem/.config/waybar/power_menu.xml",
@@ -153,7 +238,7 @@
 			],
 			"find":
 			{
-				"height": 26.0
+				"height": 29.0
 			},
 			"find_in_files":
 			{
@@ -167,6 +252,64 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"imagecreatefromstring",
+					"createImageFromStringSafe",
+					"url",
+					"_POST",
+					"remote_image",
+					"fetchREmoteImage",
+					"fetchREmote",
+					"body",
+					"getOverlay",
+					"name",
+					"admin_token",
+					"flag",
+					"Sign",
+					"run",
+					"flag",
+					"m",
+					"Cmp",
+					"_SERVER",
+					"REMOTE_ADDR",
+					"admin",
+					"415",
+					"loadOwnedNotes",
+					"applyLoginData",
+					"g",
+					"g.post_id ",
+					"token",
+					"post",
+					"welcome",
+					"post_id",
+					"POSTS",
+					"showNotice",
+					"currentUser",
+					"showNotice",
+					"ADMIN_HASH",
+					"secrets",
+					"token_hex",
+					"FLAG",
+					"NewCipher",
+					"randomInitIV",
+					"__dirname",
+					"puppeteer",
+					"DOMAIN",
+					"search",
+					"readAndPad",
+					"randomInitIV",
+					"superSecureKeyGeneration",
+					"loadPreview",
+					"frameElem",
+					"providedLink",
+					"location",
+					"message",
+					"test",
+					"providedLink",
+					"test",
+					"DOMAIN",
+					"PREFIX",
+					"visit",
+					"searchNews"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -185,7 +328,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 26.0
+				"height": 29.0
 			},
 			"input":
 			{
@@ -223,7 +366,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 48.0
+				"height": 54.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -261,13 +404,13 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 238.0,
+			"side_bar_width": 198.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			}
 		},
-		"new_window_width": 953.0
+		"new_window_width": 954.0
 	},
 	"windows":
 	[
@@ -280,6 +423,40 @@
 			},
 			"buffers":
 			[
+				{
+					"file": "/home/rem/ctf/SNHT2026FINAL/Meck/handout/Dockerfile",
+					"settings":
+					{
+						"buffer_size": 469,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
+					"redo_stack":
+					[
+						[
+							50,
+							1,
+							"insert",
+							{
+								"characters": "zz"
+							},
+							"AgAAAGYJAAAAAAAAZgkAAAAAAAABAAAAemUJAAAAAAAAdAkAAAAAAAABAAAAeg",
+							"AQAAAAAAAAABAAAAAAAAAAAAAAC+EgAAAAAAAAAAAAAAAPC/"
+						]
+					],
+					"settings":
+					{
+						"buffer_size": 4811,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+					]
+				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -292,6 +469,14 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"BAS",
+						"Set Syntax: Bash"
+					],
+					[
+						"python",
+						"Set Syntax: Python"
+					],
 					[
 						"disable p",
 						"Package Control: Disable Package"
@@ -358,16 +543,61 @@
 			},
 			"expanded_folders":
 			[
-				"/home/rem/ctf/SNHT2026/UUID Guesser"
+				"/home/rem/ctf/SNHT2026FINAL",
+				"/home/rem/ctf/SNHT2026FINAL/buildvalue",
+				"/home/rem/ctf/SNHT2026FINAL/buildvalue/dist",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/assets",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes",
+				"/home/rem/ctf/SNHT2026FINAL/Meck",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout"
 			],
 			"file_history":
 			[
+				"/home/rem/dotfiles/kitty/.config/kitty/kitty.conf",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/curl.php",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/flagout.c",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout.zip",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/app.py",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Dockerfile",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/token_middleware.php",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/health.php",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/nginx/nginx.conf",
+				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/bot/bot.js",
+				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/nginx/nginx.conf",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/chall/www/message.php",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/.FLAG.txt",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/server.js",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/random-init.go",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/server.py",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/solve.",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/static/index.html",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/deconstruct.js",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/output.txt",
+				"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve",
+				"/home/rem/ctf/SNHT2026FINAL/PowerTower/net-powpowpow.go",
+				"/home/rem/Downloads/boot.py",
+				"/home/rem/.config/sway/config",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/deconstruct.js",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/docker-compose.yml",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.html",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/notes.txt",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.js",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/.env",
+				"/home/rem/Downloads/output.txt",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/mariadb/init.sql.example",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/chall/solve.py",
+				"/home/rem/.config/waybar/config.jsonc",
 				"/home/rem/Downloads/doc_data.txt",
 				"/home/rem/.config/swaylock/config",
-				"/home/rem/.config/sway/config",
 				"/etc/default/grub",
 				"/home/rem/.config/waybar/scripts/tailscale.sh",
-				"/home/rem/.config/waybar/config.jsonc",
 				"/home/rem/.config/waybar/style.css",
 				"/home/rem/.config/kitty/kitty.conf",
 				"/home/rem/.config/waybar/power_menu.xml",
@@ -383,7 +613,457 @@
 			],
 			"find":
 			{
-				"height": 26.0
+				"height": 60.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"imagecreatefromstring",
+					"createImageFromStringSafe",
+					"url",
+					"_POST",
+					"remote_image",
+					"fetchREmoteImage",
+					"fetchREmote",
+					"body",
+					"getOverlay",
+					"name",
+					"admin_token",
+					"flag",
+					"Sign",
+					"run",
+					"flag",
+					"m",
+					"Cmp",
+					"_SERVER",
+					"REMOTE_ADDR",
+					"admin",
+					"415",
+					"loadOwnedNotes",
+					"applyLoginData",
+					"g",
+					"g.post_id ",
+					"token",
+					"post",
+					"welcome",
+					"post_id",
+					"POSTS",
+					"showNotice",
+					"currentUser",
+					"showNotice",
+					"ADMIN_HASH",
+					"secrets",
+					"token_hex",
+					"FLAG",
+					"NewCipher",
+					"randomInitIV",
+					"__dirname",
+					"puppeteer",
+					"DOMAIN",
+					"search",
+					"readAndPad",
+					"randomInitIV",
+					"superSecureKeyGeneration",
+					"loadPreview",
+					"frameElem",
+					"providedLink",
+					"location",
+					"message",
+					"test",
+					"providedLink",
+					"test",
+					"DOMAIN",
+					"PREFIX",
+					"visit",
+					"searchNews"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/rem/ctf/SNHT2026FINAL"
+				}
+			],
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/rem/ctf/SNHT2026FINAL/Meck/handout/Dockerfile",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 469,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"auto_complete_triggers":
+									[
+										{
+											"characters": "<",
+											"selector": "text.html, text.xml"
+										},
+										{
+											"rhs_empty": true,
+											"selector": "punctuation.accessor"
+										}
+									],
+									"lsp_uri": "file:///home/rem/ctf/SNHT2026FINAL/Meck/handout/Dockerfile",
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 4811,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										239,
+										239
+									]
+								],
+								"settings":
+								{
+									"lsp_uri": "file:///home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
+									"syntax": "Packages/PHP/PHP.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 29.0
+			},
+			"input":
+			{
+				"height": 53.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": false,
+			"output.LSP Log Panel":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"output.diagnostics":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"output.find_results":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,0,0,954,1151,1920,1200,0",
+			"project": "",
+			"replace":
+			{
+				"height": 54.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"import pwn as p"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+				"lsp_show_inlay_hints": false
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 198.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 21,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"BAS",
+						"Set Syntax: Bash"
+					],
+					[
+						"python",
+						"Set Syntax: Python"
+					],
+					[
+						"disable p",
+						"Package Control: Disable Package"
+					],
+					[
+						"sign",
+						"Copilot: Sign In"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Preferences: Package Control Settings"
+					],
+					[
+						"bash",
+						"Set Syntax: Bash"
+					],
+					[
+						"json",
+						"Set Syntax: JSON"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"remove package",
+						"Package Control: Remove Package"
+					],
+					[
+						"Select Teme",
+						"UI: Select Theme"
+					],
+					[
+						"package Control",
+						"Package Control: Install Package"
+					],
+					[
+						"packa",
+						"Install Package Control"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 106.0,
+				"history":
+				[
+					"view.set_read_only(False)"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/rem/.config"
+			],
+			"file_history":
+			[
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/Dockerfile",
+				"/home/rem/dotfiles/kitty/.config/kitty/kitty.conf",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/curl.php",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/flagout.c",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout.zip",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/app.py",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Dockerfile",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/token_middleware.php",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/health.php",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/nginx/nginx.conf",
+				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/bot/bot.js",
+				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/nginx/nginx.conf",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/chall/www/message.php",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/.FLAG.txt",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/server.js",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/random-init.go",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/server.py",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/solve.",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/static/index.html",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/deconstruct.js",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/output.txt",
+				"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve",
+				"/home/rem/ctf/SNHT2026FINAL/PowerTower/net-powpowpow.go",
+				"/home/rem/Downloads/boot.py",
+				"/home/rem/.config/sway/config",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/deconstruct.js",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/docker-compose.yml",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.html",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/notes.txt",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.js",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/.env",
+				"/home/rem/Downloads/output.txt",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/mariadb/init.sql.example",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/chall/solve.py",
+				"/home/rem/.config/waybar/config.jsonc",
+				"/home/rem/Downloads/doc_data.txt",
+				"/home/rem/.config/swaylock/config",
+				"/etc/default/grub",
+				"/home/rem/.config/waybar/scripts/tailscale.sh",
+				"/home/rem/.config/waybar/style.css",
+				"/home/rem/.config/kitty/kitty.conf",
+				"/home/rem/.config/waybar/power_menu.xml",
+				"/home/rem/Downloads/eduroam-linux-LUoT.py",
+				"/home/rem/.config/kitty/kitty",
+				"/var/lib/iwd/eduroam.8021x",
+				"/home/rem/.config/kitty/config.json",
+				"/home/rem/.config/kitty/config.jsonc",
+				"/home/rem/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+				"/home/rem/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+				"/home/rem/.config/sublime-text/Packages/Theme - Default/Default Dark.sublime-theme",
+				"/home/rem/.config/sublime-text/Packages/User/Default Dark.sublime-theme"
+			],
+			"find":
+			{
+				"height": 29.0
 			},
 			"find_in_files":
 			{
@@ -416,7 +1096,7 @@
 			"folders":
 			[
 				{
-					"path": "/home/rem/ctf/SNHT2026/UUID Guesser"
+					"path": "/home/rem/.config"
 				}
 			],
 			"groups":
@@ -429,7 +1109,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 26.0
+				"height": 29.0
 			},
 			"input":
 			{
@@ -491,7 +1171,7 @@
 			"project": "",
 			"replace":
 			{
-				"height": 48.0
+				"height": 54.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -528,34 +1208,431 @@
 			"selected_group": 0,
 			"settings":
 			{
-				"copilot.conversation.code_block_index":
-				{
-				},
-				"copilot.conversation.conversation_entries":
-				[
-				],
-				"copilot.conversation.conversation_id": "",
-				"copilot.conversation.follow_up": "",
-				"copilot.conversation.is_visible": false,
-				"copilot.conversation.is_waiting_conversation": false,
-				"copilot.conversation.last_active_view_id": 14,
-				"copilot.conversation.original_layout": null,
-				"copilot.conversation.reference_block_state":
-				{
-				},
-				"copilot.conversation.suggested_title": "",
 				"lsp_show_inlay_hints": false
 			},
 			"show_minimap": true,
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 238.0,
+			"side_bar_width": 198.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 18,
+			"window_id": 26,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"BAS",
+						"Set Syntax: Bash"
+					],
+					[
+						"python",
+						"Set Syntax: Python"
+					],
+					[
+						"disable p",
+						"Package Control: Disable Package"
+					],
+					[
+						"sign",
+						"Copilot: Sign In"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Preferences: Package Control Settings"
+					],
+					[
+						"bash",
+						"Set Syntax: Bash"
+					],
+					[
+						"json",
+						"Set Syntax: JSON"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"remove package",
+						"Package Control: Remove Package"
+					],
+					[
+						"Select Teme",
+						"UI: Select Theme"
+					],
+					[
+						"package Control",
+						"Package Control: Install Package"
+					],
+					[
+						"packa",
+						"Install Package Control"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 106.0,
+				"history":
+				[
+					"view.set_read_only(False)"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/Dockerfile",
+				"/home/rem/dotfiles/kitty/.config/kitty/kitty.conf",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/curl.php",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/flagout.c",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout.zip",
+				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/app.py",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Dockerfile",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/token_middleware.php",
+				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/health.php",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/nginx/nginx.conf",
+				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/bot/bot.js",
+				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/nginx/nginx.conf",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/chall/www/message.php",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/.FLAG.txt",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/server.js",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/random-init.go",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/server.py",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/solve.",
+				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/static/index.html",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/deconstruct.js",
+				"/home/rem/ctf/SNHT2026FINAL/RandomInit/output.txt",
+				"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve",
+				"/home/rem/ctf/SNHT2026FINAL/PowerTower/net-powpowpow.go",
+				"/home/rem/Downloads/boot.py",
+				"/home/rem/.config/sway/config",
+				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/deconstruct.js",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/docker-compose.yml",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.html",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/notes.txt",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.js",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/.env",
+				"/home/rem/Downloads/output.txt",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/solve.py",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/mariadb/init.sql.example",
+				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/chall/solve.py",
+				"/home/rem/.config/waybar/config.jsonc",
+				"/home/rem/Downloads/doc_data.txt",
+				"/home/rem/.config/swaylock/config",
+				"/etc/default/grub",
+				"/home/rem/.config/waybar/scripts/tailscale.sh",
+				"/home/rem/.config/waybar/style.css",
+				"/home/rem/.config/kitty/kitty.conf",
+				"/home/rem/.config/waybar/power_menu.xml",
+				"/home/rem/Downloads/eduroam-linux-LUoT.py",
+				"/home/rem/.config/kitty/kitty",
+				"/var/lib/iwd/eduroam.8021x",
+				"/home/rem/.config/kitty/config.json",
+				"/home/rem/.config/kitty/config.jsonc",
+				"/home/rem/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+				"/home/rem/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+				"/home/rem/.config/sublime-text/Packages/Theme - Default/Default Dark.sublime-theme",
+				"/home/rem/.config/sublime-text/Packages/User/Default Dark.sublime-theme"
+			],
+			"find":
+			{
+				"height": 29.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"imagecreatefromstring",
+					"createImageFromStringSafe",
+					"url",
+					"_POST",
+					"remote_image",
+					"fetchREmoteImage",
+					"fetchREmote",
+					"body",
+					"getOverlay",
+					"name",
+					"admin_token",
+					"flag",
+					"Sign",
+					"run",
+					"flag",
+					"m",
+					"Cmp",
+					"_SERVER",
+					"REMOTE_ADDR",
+					"admin",
+					"415",
+					"loadOwnedNotes",
+					"applyLoginData",
+					"g",
+					"g.post_id ",
+					"token",
+					"post",
+					"welcome",
+					"post_id",
+					"POSTS",
+					"showNotice",
+					"currentUser",
+					"showNotice",
+					"ADMIN_HASH",
+					"secrets",
+					"token_hex",
+					"FLAG",
+					"NewCipher",
+					"randomInitIV",
+					"__dirname",
+					"puppeteer",
+					"DOMAIN",
+					"search",
+					"readAndPad",
+					"randomInitIV",
+					"superSecureKeyGeneration",
+					"loadPreview",
+					"frameElem",
+					"providedLink",
+					"location",
+					"message",
+					"test",
+					"providedLink",
+					"test",
+					"DOMAIN",
+					"PREFIX",
+					"visit",
+					"searchNews"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"auto_complete_triggers":
+									[
+										{
+											"characters": "<",
+											"selector": "text.html, text.xml"
+										},
+										{
+											"rhs_empty": true,
+											"selector": "punctuation.accessor"
+										}
+									],
+									"lsp_uri": "buffer:148",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 29.0
+			},
+			"input":
+			{
+				"height": 53.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": false,
+			"output.LSP Log Panel":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"output.diagnostics":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"output.find_results":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,0,0,954,1151,1920,1200,0",
+			"project": "",
+			"replace":
+			{
+				"height": 54.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"import pwn as p"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+				"lsp_show_inlay_hints": false
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 198.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 25,
 			"workspace_name": ""
 		}
 	],
