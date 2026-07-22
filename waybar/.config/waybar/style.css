@@ -20,6 +20,7 @@
 @define-color brpurple #d6acff;
 @define-color brpink #ff92df;
 @define-color arch_blue #89b4fa;
+@define-color wtsd-red #ed4231;
 
 @define-color workspace_background    @background;
 @define-color workspace_button    @foreground;
@@ -58,6 +59,7 @@ window#waybar {
 #tray,
 #custom-notification,
 #power-profiles-daemon,
+#custom-updates,
 #custom-power {
     background: @background;
     color: @foreground;
@@ -67,11 +69,15 @@ window#waybar {
 }
 
 /* Specific colors for icons to match the online vibe */
-#custom-fuzzel { color: @arch_blue; border-radius: 12px 5px 5px 12px; }
+#custom-fuzzel { 
+    font-size: 15px;
+    color: @white;
+}
+
 #cpu,
 #memory,
 #temperature,
-#disk { color: @arch_blue; }
+#disk { color: @cyan; }
 #clock { color: @white; }
 #custom-notification { color: @brpink; }
 
@@ -87,14 +93,14 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    color: @black;
-    background: @arch_blue;
+    color: @white;
+    background: @wtsd-red;
     border-radius: 5px;
 }
 
 #workspaces button.urgent {
-    background: @red;
-    color: @white;
+    background: @green;
+    color: @black;
 }
 
 /* Battery states */

@@ -3,8 +3,6 @@
 	"color_scheme": "Packages/One Dark Material - Theme/schemes/OneDark.tmTheme",
 	"ignored_packages":
 	[
-		"LSP-copilot",
-		"Vintage",
 	],
 	"themed_title_bar": "true",
 	"font_face": "JetBrainsMono Nerd Font",

@@ -19,6 +19,7 @@
         "sway/workspaces",
     ],
     "modules-right": [
+        "custom/updates",
         "pulseaudio",
         "network",
         "custom/tailscale",
@@ -269,5 +270,13 @@
         "tooltip": true,
         "return-type": "json",
         "interval": 5
-    }
+    },
+    "custom/updates": {
+        "format": "{} 󰚰",
+        "exec": "~/.config/waybar/scripts/updates.sh",
+        "return-type": "json",
+        "interval": 3600, // Checks for updates every hour (in seconds)
+        "on-click": "kitty --hold -e yay -Syu", // --hold keeps the terminal open after updating
+        "tooltip": true
+    },
 }

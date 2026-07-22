@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from hashlib import md5
 from os import PathLike
 from typing import Any
 from typing import Callable
@@ -9,10 +10,13 @@ import os
 import shutil
 import sublime
 import subprocess  # noqa: S404
+import sys
 import threading
 
 if TYPE_CHECKING:
+    from collections.abc import Sequence
     from pathlib import Path
+    from sublime_lib import ResourcePath
 
 StringCallback = Callable[[str], None]
 SemanticVersion = Tuple[int, int, int]
@@ -20,14 +24,31 @@ SemanticVersion = Tuple[int, int, int]
 is_windows = sublime.platform() == 'windows'
 
 
-def platform_program_file_extension() -> str:
-    return '.exe' if sublime.platform() == 'windows' else ''
+def start_process(
+    args: Sequence[str | PathLike[str]],
+    *,
+    stdin: int = subprocess.PIPE,
+    stdout: int = subprocess.PIPE,
+    stderr: int = subprocess.PIPE,
+    cwd: str | PathLike[str] | None = None,
+    extra_env: dict[str, str] | None = None,  # merged with envs obtained from current process
+) -> subprocess.Popen[bytes]:
+    env = os.environ.copy()
+    if extra_env:
+        env.update(extra_env)
+    startupinfo = None
+    if sys.platform == 'win32':
+        startupinfo = subprocess.STARTUPINFO()
+        startupinfo.dwFlags |= subprocess.SW_HIDE | subprocess.STARTF_USESHOWWINDOW
+    return subprocess.Popen(  # noqa: S603
+        args, stdin=stdin, stdout=stdout, stderr=stderr, cwd=cwd, env=env, startupinfo=startupinfo)
 
 
 def run_command_sync(
-    args: list[str | PathLike[str]],
+    args: Sequence[str | PathLike[str]],
     cwd: str | PathLike[str] | None = None,
-    extra_env: dict[str, str] | None = None,
+    env: dict[str, str] | None = None,  # used as is, without merging with process envs
+    extra_env: dict[str, str] | None = None,  # merged with envs obtained from current process
     extra_paths: list[str] | None = None,
     *,
     shell: bool = is_windows,
@@ -42,26 +63,28 @@ def run_command_sync(
     if extra_paths is None:
         extra_paths = []
     try:
-        env = None
-        if extra_env or extra_paths:
-            env = os.environ.copy()
+        final_env = None
+        if env:
+            final_env = env
+        elif extra_env or extra_paths:
+            final_env = os.environ.copy()
             if extra_env:
-                env.update(extra_env)
+                final_env.update(extra_env)
             if extra_paths:
-                env['PATH'] = os.path.pathsep.join(extra_paths) + os.path.pathsep + env['PATH']
+                final_env['PATH'] = os.path.pathsep.join(extra_paths) + os.path.pathsep + final_env['PATH']
         startupinfo = None
         if is_windows:
             startupinfo = subprocess.STARTUPINFO()
             startupinfo.dwFlags |= subprocess.SW_HIDE | subprocess.STARTF_USESHOWWINDOW
         output = subprocess.check_output(  # noqa: S603
-            args, cwd=cwd, shell=shell, stderr=subprocess.STDOUT, env=env, startupinfo=startupinfo)
+            args, cwd=cwd, shell=shell, stderr=subprocess.STDOUT, env=final_env, startupinfo=startupinfo)
         return (decode_bytes(output).strip(), None)
     except subprocess.CalledProcessError as error:
         return ('', decode_bytes(error.output).strip())
 
 
 def run_command_async(
-    args: list[str | PathLike[str]], on_success: StringCallback, on_error: StringCallback, **kwargs: Any,
+    args: Sequence[str | PathLike[str]], on_success: StringCallback, on_error: StringCallback, **kwargs: Any,
 ) -> None:
     """
     Run the given command asynchronously.
@@ -101,3 +124,19 @@ def rmtree_ex(path: str | Path, *, ignore_errors: bool = False) -> None:
 def version_to_string(version: SemanticVersion) -> str:
     """Return a string representation of a version tuple."""
     return '.'.join([str(c) for c in version])
+
+
+def is_hash_equal(resource_path: ResourcePath, filesystem_path: Path, *, ignore_missing_source: bool = False) -> bool:
+    if not resource_path.exists():
+        if ignore_missing_source:
+            return True
+        msg = f'Resource "{resource_path}" does not exist inside the package'
+        raise RuntimeError(msg)
+    if not filesystem_path.exists():
+        return False
+    source_hash = md5(resource_path.read_bytes()).hexdigest()  # noqa: S324
+    try:
+        return source_hash == md5(filesystem_path.read_bytes()).hexdigest()  # noqa: S324
+    except FileNotFoundError:
+        pass
+    return False

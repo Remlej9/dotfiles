@@ -6,7 +6,7 @@ CONNECTING_DURATION=2  # seconds to show transition states
 # ========================================================
 # CONFIGURATION: Set your preferred exit node here!
 # Replace with the Tailscale IP or Hostname of your exit node
-EXIT_NODE_NAME="pve-1" 
+EXIT_NODE_NAME="sirius" 
 # ========================================================
 
 get_tailscale_status() {

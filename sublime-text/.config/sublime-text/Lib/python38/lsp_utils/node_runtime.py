@@ -3,27 +3,31 @@ from __future__ import annotations
 from ._util import download_file
 from ._util import extract_archive
 from ._util import logger
+from .constants import HOST_ARCH
+from .constants import INSTALLING_MARKER_FILE
 from .constants import SETTINGS_FILENAME
 from .helpers import rmtree_ex
 from .helpers import run_command_sync
 from .helpers import SemanticVersion
+from .helpers import start_process
 from .helpers import version_to_string
 from .third_party.semantic_version import NpmSpec  # pyright: ignore[reportPrivateLocalImportUsage]
 from .third_party.semantic_version import Version  # pyright: ignore[reportPrivateLocalImportUsage]
-from contextlib import contextmanager
 from LSP.plugin.core.logging import debug
 from pathlib import Path
 from sublime_lib import ActivityIndicator
 from typing import Any
 from typing import cast
 from typing import final
-from typing import Generator
+from typing import TYPE_CHECKING
 from typing_extensions import override
-import os
 import shutil
 import sublime
 import subprocess  # noqa: S404
 import sys
+
+if TYPE_CHECKING:
+    import os
 
 __all__ = ['NodeRuntime']
 
@@ -32,6 +36,9 @@ IS_WINDOWS_7_OR_LOWER = sys.platform == 'win32' and sys.getwindowsversion()[:2] 
 
 NODE_RUNTIME_VERSION = '22.18.0'
 NODE_DIST_URL = 'https://nodejs.org/dist/v{version}/{filename}'
+
+CUSTOM_NODE_RUNTIME_VERSION = '24.15.0'
+CUSTOM_NODE_DIST_URL = 'https://github.com/sublimelsp/node-pointer-compression-builds/releases/download/v{version}/{filename}'
 
 ELECTRON_RUNTIME_VERSION = '37.3.1'
 ELECTRON_NODE_VERSION = '22.18.0'
@@ -72,7 +79,7 @@ class NodeRuntime:
         cls, package_name: str, storage_path: Path, required_node_version: NpmSpec,
     ) -> NodeRuntime:
         resolved_runtime: NodeRuntime | None = None
-        default_runtimes = ['system', 'local']
+        default_runtimes = ['system', 'local', 'local-test']
         settings = sublime.load_settings(SETTINGS_FILENAME)
         selected_runtimes = cast('list[str]', settings.get('nodejs_runtime') or default_runtimes)
         log_lines = ['--- lsp_utils Node.js resolving start ---']
@@ -91,11 +98,17 @@ class NodeRuntime:
                     break
                 except Exception as ex:
                     log_lines.append(f' * {ex}')
-            elif runtime_type == 'local':
+            elif runtime_type in {'local', 'local-test'}:
                 log_lines.append(f'Resolving Node.js Runtime from lsp_utils for package {package_name}...')
-                use_electron = cast('bool', settings.get('local_use_electron') or False)
+                use_electron = runtime_type == 'local' and cast('bool', settings.get('local_use_electron') or False)
                 runtime_dir = storage_path / 'lsp_utils' / 'node-runtime'
-                local_runtime = ElectronRuntimeLocal(runtime_dir) if use_electron else NodeRuntimeLocal(runtime_dir)
+                node_version = NODE_RUNTIME_VERSION if runtime_type == 'local' else CUSTOM_NODE_RUNTIME_VERSION
+                node_dist_url = NODE_DIST_URL if runtime_type == 'local' else CUSTOM_NODE_DIST_URL
+                local_runtime = (
+                    ElectronRuntimeLocal(runtime_dir)
+                    if use_electron
+                    else NodeRuntimeLocal(runtime_dir, node_version, node_dist_url)
+                )
                 try:
                     local_runtime.check_binary_present()
                 except Exception as ex:
@@ -104,15 +117,6 @@ class NodeRuntime:
                             NO_NODE_FOUND_MESSAGE.format(package_name=package_name), 'Download Node.js'):
                         log_lines.append(' * Download skipped')
                         continue
-                    # Remove outdated runtimes.
-                    if runtime_dir.is_dir():
-                        for directory in next(os.walk(runtime_dir))[1]:
-                            old_dir = runtime_dir / directory
-                            logger.info(f'Deleting outdated Node.js runtime directory "{old_dir}"')
-                            try:
-                                rmtree_ex(old_dir)
-                            except Exception as ex:
-                                log_lines.append(f' * Failed deleting: {ex}')
                     try:
                         local_runtime.install_node()
                     except Exception as ex:
@@ -131,6 +135,7 @@ class NodeRuntime:
                     log_lines.append(f' * {ex}')
         if not resolved_runtime:
             log_lines.append('--- lsp_utils Node.js resolving end ---')
+            logger.debug('\n'.join(log_lines))
             msg = 'Failed resolving Node.js Runtime. Please check in the console for more details.'
             raise Exception(msg)
         return resolved_runtime
@@ -200,18 +205,11 @@ class NodeRuntime:
     ) -> subprocess.Popen[bytes] | None:
         if env is None:
             env = {}
+        env.update(self.node_env())
         node_bin = self.node_bin()
         if node_bin is None:
             return None
-        os_env = os.environ.copy()
-        os_env.update(self.node_env())
-        os_env.update(env)
-        startupinfo = None
-        if sys.platform == 'win32':
-            startupinfo = subprocess.STARTUPINFO()
-            startupinfo.dwFlags |= subprocess.SW_HIDE | subprocess.STARTF_USESHOWWINDOW
-        return subprocess.Popen(  # noqa: S603
-            [node_bin, *args], stdin=stdin, stdout=stdout, stderr=stderr, env=os_env, startupinfo=startupinfo)
+        return start_process([node_bin, *args], stdin=stdin, stdout=stdout, stderr=stderr, extra_env=env)
 
     def run_install(self, cwd: str | os.PathLike[str]) -> None:
         if not Path(cwd).is_dir():
@@ -256,12 +254,15 @@ class NodeRuntimePATH(NodeRuntime):
 @final
 class NodeRuntimeLocal(NodeRuntime):
 
-    def __init__(self, base_dir: Path, node_version: str = NODE_RUNTIME_VERSION) -> None:
+    def __init__(
+        self, base_dir: Path, node_version: str = NODE_RUNTIME_VERSION, node_dist_url: str = NODE_DIST_URL,
+    ) -> None:
         super().__init__()
         self._base_dir = (base_dir / node_version).resolve()
         self._node_version = node_version
         self._node_dir = self._base_dir / 'node'
-        self._install_in_progress_marker_file = self._base_dir / '.installing'
+        self._node_dist_url = node_dist_url
+        self._install_in_progress_marker_file = self._base_dir / INSTALLING_MARKER_FILE
         self._resolve_paths()
 
     # --- NodeRuntime overrides ----------------------------------------------------------------------------------------
@@ -278,9 +279,8 @@ class NodeRuntimeLocal(NodeRuntime):
         self._install_in_progress_marker_file.parent.mkdir(exist_ok=True, parents=True)
         self._install_in_progress_marker_file.open('a', encoding='utf-8').close()
         with ActivityIndicator(sublime.active_window(), '[LSP] Setting up local Node.js'):
-            install_node = NodeInstaller(self._base_dir, self._node_version)
+            install_node = NodeInstaller(self._base_dir, self._node_version, self._node_dist_url)
             install_node.run()
-            self._resolve_paths()
         self._install_in_progress_marker_file.unlink()
         self._resolve_paths()
 
@@ -315,7 +315,7 @@ class NodeRuntimeLocal(NodeRuntime):
 class NodeInstaller:
     """Command to install a local copy of Node.js."""
 
-    def __init__(self, base_dir: Path, node_version: str = NODE_RUNTIME_VERSION) -> None:
+    def __init__(self, base_dir: Path, node_version: str, node_dist_url: str) -> None:
         """
         Init NodeInstaller.
 
@@ -324,6 +324,7 @@ class NodeInstaller:
         """
         self._base_dir = base_dir
         self._node_version = node_version
+        self._node_dist_url = node_dist_url
         self._cache_dir = self._base_dir / 'cache'
 
     def run(self) -> None:
@@ -339,8 +340,8 @@ class NodeInstaller:
 
     def _node_archive(self) -> tuple[str, str]:
         platform = sublime.platform()
-        arch = sublime.arch()
-        if platform == 'windows' and arch == 'x64':
+        arch = HOST_ARCH
+        if platform == 'windows':
             node_os = 'win'
             archive = 'zip'
         elif platform == 'linux':
@@ -353,12 +354,14 @@ class NodeInstaller:
             msg = f'{arch} {platform} is not supported'
             raise Exception(msg)
         filename = f'node-v{self._node_version}-{node_os}-{arch}.{archive}'
-        dist_url = NODE_DIST_URL.format(version=self._node_version, filename=filename)
+        dist_url = self._node_dist_url.format(version=self._node_version, filename=filename)
         return filename, dist_url
 
     def _install_node(self, archive_path: Path) -> None:
-        install_directory = extract_archive(archive_path, self._base_dir)
-        install_directory.rename(install_directory.parent / 'node')
+        temporary_target_path = self._base_dir / 'node-temp'
+        extracted_path = extract_archive(archive_path, temporary_target_path) or temporary_target_path
+        extracted_path.rename(self._base_dir / 'node')
+        rmtree_ex(temporary_target_path, ignore_errors=True)
         archive_path.unlink()
 
 
@@ -368,7 +371,7 @@ class ElectronRuntimeLocal(NodeRuntime):
         super().__init__()
         self._base_dir = (base_dir / ELECTRON_NODE_VERSION).resolve()
         self._yarn = self._base_dir / 'yarn.js'
-        self._install_in_progress_marker_file = self._base_dir / '.installing'
+        self._install_in_progress_marker_file = self._base_dir / INSTALLING_MARKER_FILE
         if not self._install_in_progress_marker_file.is_file():
             self._resolve_paths()
 
@@ -462,7 +465,7 @@ class ElectronInstaller:
 
     def _node_archive(self) -> tuple[str, str]:
         platform = sublime.platform()
-        arch = sublime.arch()
+        arch = HOST_ARCH
         if platform == 'windows':
             platform_code = 'win32'
         elif platform == 'linux':
@@ -488,14 +491,3 @@ class ElectronInstaller:
                     raise Exception(msg)
         finally:
             archive_path.unlink()
-
-
-@contextmanager
-def chdir(new_dir: str) -> Generator[None, None, None]:
-    """Context Manager for changing the working directory."""
-    cur_dir = Path.cwd()
-    os.chdir(new_dir)
-    try:
-        yield
-    finally:
-        os.chdir(cur_dir)

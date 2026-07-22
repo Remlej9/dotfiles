@@ -3,6 +3,7 @@ from __future__ import annotations
 from ._util import download_file
 from ._util import extract_archive
 from .helpers import run_command_ex
+from LSP.plugin import ST_STORAGE_PATH
 from pathlib import Path
 from shutil import which
 from tempfile import TemporaryDirectory
@@ -14,7 +15,7 @@ __all__ = [
 ]
 
 
-UV_TAG = '0.10.4'
+UV_TAG = '0.11.19'
 UV_BINARY = 'uv.exe' if sublime.platform() == 'windows' else 'uv'
 ARTIFACT_URL = 'https://github.com/astral-sh/uv/releases/download/{tag}/{filename}'
 ARTIFACT_ARCH_MAPPING = {
@@ -51,13 +52,12 @@ class UvRunner:
     downloading uv.
     """
 
-    def __init__(self, storage_path: Path) -> None:
-        self._storage_path = storage_path
+    def __init__(self) -> None:
         self._uv: str
         if which('uv'):
             self._uv = 'uv'
         else:
-            target_directory = self._storage_path / 'lsp_utils' / 'uv'
+            target_directory = Path(ST_STORAGE_PATH) / 'lsp_utils' / 'uv'
             target_version_path = target_directory / 'VERSION'
             target_uv_path = target_directory / UV_BINARY
             if not target_uv_path.exists() or not target_version_path.exists() or \
@@ -68,8 +68,9 @@ class UvRunner:
                 with TemporaryDirectory(dir=target_directory) as tempdir:
                     archive_path = Path(tempdir, filename)
                     download_file(url, archive_path)
-                    source_directory = extract_archive(archive_path, Path(tempdir))
-                    source_directory.joinpath(UV_BINARY).replace(target_uv_path)
+                    temporary_directory_path = Path(tempdir)
+                    extracted_path = extract_archive(archive_path, temporary_directory_path) or temporary_directory_path
+                    extracted_path.joinpath(UV_BINARY).replace(target_uv_path)
                     target_uv_path.chmod(0o744)
                     target_version_path.write_text(UV_TAG)
             self._uv = str(target_uv_path)
