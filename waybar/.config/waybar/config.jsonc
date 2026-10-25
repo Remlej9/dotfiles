@@ -220,15 +220,15 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/lastfm-anim": {
-        "exec": "~/.config/waybar/scripts/lastfm.py --anim",
+        "exec": "python3 $HOME/.config/waybar/scripts/lastfm.py --anim",
         "return-type": "json",
         "format": "{}",
         "tooltip": false
     },
-    
+
     "custom/lastfm-text": {
-        "exec": "~/.config/waybar/scripts/lastfm.py --text",
-        "on-click": "~/.config/waybar/scripts/lastfm.py --open",
+        "exec": "python3 $HOME/.config/waybar/scripts/lastfm.py --text",
+        "on-click": "python3 $HOME/.config/waybar/scripts/lastfm.py --open",
         "return-type": "json",
         "format": "{}",
         "escape": true,

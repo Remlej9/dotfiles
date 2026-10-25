@@ -5,7 +5,7 @@ import time
 import threading
 import sys
 
-API_KEY = "KEY HERE"
+API_KEY = "apikey"
 USER = "Remlej9"
 
 current_song = ""
