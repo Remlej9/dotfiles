@@ -109,6 +109,7 @@ input * {
 
     # Custom programs
     bindsym $mod+Shift+t tidal-hifi
+    bindsym $mod+period exec bemoji -t
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -262,10 +263,8 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-#
-# Rotation:
-#
-bindsym $mod+Shift+r output DP-3 transform 270
+bindsym $mod+Shift+r exec ~/.config/sway/rotate.sh cw
+bindsym $mod+Control+r exec ~/.config/sway/rotate.sh ccw
 
 
 bindsym $mod+r mode "resize"

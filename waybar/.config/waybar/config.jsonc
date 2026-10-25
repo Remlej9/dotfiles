@@ -13,6 +13,8 @@
         "tray",
         "sway/mode",
         "custom/weather",
+        "custom/lastfm-anim",
+        "custom/lastfm-text",
         "sway/window",
     ],
     "modules-center": [
@@ -216,6 +218,21 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/lastfm-anim": {
+        "exec": "~/.config/waybar/scripts/lastfm.py --anim",
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": false
+    },
+    
+    "custom/lastfm-text": {
+        "exec": "~/.config/waybar/scripts/lastfm.py --text",
+        "on-click": "~/.config/waybar/scripts/lastfm.py --open",
+        "return-type": "json",
+        "format": "{}",
+        "escape": true,
+        "tooltip": true
     },
     "custom/notification": {
         "tooltip": false,

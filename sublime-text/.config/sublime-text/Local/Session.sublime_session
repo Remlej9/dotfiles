@@ -1,118 +1,166 @@
 {
 	"file_history":
 	[
-		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/backend/src/db.ts",
-		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/clock.service.ts",
-		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/backend/src/services/clock.service.ts",
-		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/db.ts",
-		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/.gitlab-ci.yml",
-		"/home/rem/.cache/.fr-J00PS3/EAW_LMT/README",
-		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/tsconfig.json",
-		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/team.tsx",
-		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/package-lock.json",
-		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/match.tsx",
-		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/match/EventLog.tsx",
-		"/home/rem/git/companion-recorder/src/index.tsx",
-		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/User/WakaTime.sublime-settings",
-		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/Package Control/Package Control.sublime-settings",
-		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/User/Package Control.sublime-settings",
-		"/home/rem/ctf/SNHT2026/Speedrun/solve/client_socket.py",
-		"/home/rem/Downloads/c99.php",
-		"/home/rem/Downloads/chall.py",
-		"/home/rem/git/VoiceOfNature.github.io/images/airplane-window.jpeg",
-		"/home/rem/git/VoiceOfNature.github.io/images/city.jpeg",
-		"/home/rem/.config/xdg-desktop-portal-wlr/config",
-		"/home/rem/.config/waybar/style.css",
-		"/home/rem/.config/waybar/config.jsonc",
-		"/home/rem/.config/waybar/scripts/updates.sh",
-		"/home/rem/.config/waybar/scripts/tailscale.sh",
-		"/home/rem/.config/pulse/cookie",
-		"/usr/lib/systemd/user/xdg-desktop-portal.service",
+		"/home/rem/git/d7032e-home-exam/core/package-lock.json",
+		"/home/rem/git/d7032e-home-exam/core/jest.config.js",
+		"/home/rem/git/d7032e-home-exam/core/package.json",
+		"/home/rem/git/d7032e-home-exam/.gitlab-ci.yml",
+		"/home/rem/git/d7032e-home-exam/core/setup-jasmine-env.js",
 		"/home/rem/.config/sway/config",
-		"/mnt/NAS/README.txt",
-		"/home/rem/.cache/.fr-QINXP3/startserver.bat",
-		"/home/rem/Downloads/teknik_stadgar.md",
-		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Caddyfile",
-		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/solve.py",
-		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/.env",
-		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/Dockerfile",
-		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/chall/www/message.php",
-		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/docker-compose.yaml",
-		"/home/rem/Documents/STUK/Formulasittning.md",
-		"/home/rem/Downloads/farthallare.m",
-		"/home/rem/ctf/SNHT2026FINAL/autograph/solve.py",
-		"/home/rem/ctf/SNHT2026FINAL/PowerTower/net-powpowpow.go",
-		"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve.py",
-		"/home/rem/ctf/SNHT2026FINAL/autograph/net-autograph.go",
-		"/home/rem/ctf/SNHT2026FINAL/PowerTower/test/test.go",
-		"/home/rem/.config/swaync/style.css",
-		"/home/rem/.config/swaync/config.json",
-		"/home/rem/ctf/SNHT2026FINAL/JAAS/solve.py",
-		"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/solve.",
-		"/home/rem/ctf/SNHT2026FINAL/PowerTower/test.go",
-		"/home/rem/Downloads/typo",
-		"/home/rem/Downloads/main.c",
-		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/healthcheck.sh",
-		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/curl.php",
-		"/home/rem/ctf/SNHT2026FINAL/Meck/handout/Dockerfile",
-		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
-		"/home/rem/Downloads/boot.py",
-		"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/server.py",
-		"/home/rem/dotfiles/kitty/.config/kitty/kitty.conf",
-		"/home/rem/ctf/SNHT2026FINAL/Meck/handout/flagout.c",
-		"/home/rem/ctf/SNHT2026FINAL/Meck/handout.zip",
-		"/home/rem/ctf/SNHT2026FINAL/Meck/handout/app.py",
-		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Dockerfile",
-		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/token_middleware.php",
-		"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/health.php",
-		"/home/rem/ctf/SNHT2026/ContentType/solve.py",
-		"/home/rem/ctf/SNHT2026/backup/chall/solve.py",
-		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/nginx/nginx.conf",
-		"/home/rem/ctf/SNHT2026FINAL/Insanitizer/bot/bot.js",
-		"/home/rem/ctf/SNHT2026FINAL/Insanitizer/nginx/nginx.conf",
-		"/home/rem/ctf/SNHT2026FINAL/JAAS/container/.FLAG.txt",
-		"/home/rem/ctf/SNHT2026FINAL/JAAS/container/server.js",
-		"/home/rem/ctf/SNHT2026FINAL/RandomInit/random-init.go",
-		"/home/rem/ctf/SNHT2026FINAL/RandomInit/solve.py",
-		"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/static/index.html",
-		"/home/rem/ctf/SNHT2026FINAL/JAAS/deconstruct.js",
-		"/home/rem/ctf/SNHT2026FINAL/RandomInit/output.txt",
-		"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve",
-		"/home/rem/ctf/SNHT2026FINAL/JAAS/container/deconstruct.js",
-		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/docker-compose.yml",
-		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.html",
-		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/notes.txt",
-		"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.js",
-		"/home/rem/Downloads/output.txt",
-		"/home/rem/ctf/SNHT2026FINAL/nyheter/solve.py",
-		"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/mariadb/init.sql.example",
-		"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/chall/solve.py",
-		"/home/rem/.config/kitty/kitty.conf",
-		"/home/rem/Downloads/doc_data.txt",
-		"/home/rem/.config/swaylock/config",
-		"/etc/default/grub",
+		"/home/rem/git/frostbyte-ltu/src/components/Sponsors.tsx",
+		"/home/rem/git/frostbyte-ltu/src/components/Ctfs.tsx",
+		"/home/rem/git/frostbyte-ltu/src/components/Meetups.tsx",
+		"/home/rem/git/frostbyte-ltu/src/components/Footer.tsx",
+		"/home/rem/git/frostbyte-ltu/src/components/About.tsx",
+		"/home/rem/git/frostbyte-ltu/src/components/Header.tsx",
+		"/home/rem/git/frostbyte-ltu/src/App.tsx",
+		"/home/rem/git/frostbyte-ltu/frostbyte-ltu/package.json",
+		"/home/rem/.config/sway/rotate.sh",
+		"/home/rem/git/frostbyte-ltu/vite.config.ts",
+		"/home/rem/git/frostbyte-ltu/src/index.css",
+		"/home/rem/git/frostbyte-ltu/index.html",
+		"/home/rem/git/frostbyte-ltu/src/App.css",
+		"/home/rem/git/d7032e-home-exam/server/src/index.ts",
+		"/home/rem/git/d7032e-home-exam/client/tsconfig.json",
+		"/home/rem/git/d7032e-home-exam/client/src/hooks/useGameEngine.ts",
+		"/home/rem/git/d7032e-home-exam/server/package-lock.json",
+		"/home/rem/git/d7032e-home-exam/core/src/engine/DeckFactory.ts",
+		"/home/rem/git/d7032e-home-exam/client/src/components/CenterTable.tsx",
+		"/home/rem/git/d7032e-home-exam/client/.env.development",
+		"/home/rem/git/d7032e-home-exam/.dockerignore",
+		"/home/rem/git/d7032e-home-exam/docker-compose.yml",
+		"/home/rem/git/d7032e-home-exam/Dockerfile",
+		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/LSP-copilot/LSP-copilot.sublime-settings",
+		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/User/LSP-copilot.sublime-settings",
+		"/home/rem/git/d7032e-home-exam/core/src/expansions/base/ThreeOfAKindEffect.ts",
+		"/home/rem/git/d7032e-home-exam/core/src/expansions/base/AttackEffect.ts",
+		"/home/rem/git/d7032e-home-exam/core/src/expansions/base/SkipEffect.ts",
+		"/home/rem/git/d7032e-home-exam/core/src/expansions/base/ShuffleEffect.ts",
+		"/home/rem/git/d7032e-home-exam/core/src/expansions/base/FavorEffect.ts",
+		"/home/rem/git/d7032e-home-exam/core/src/expansions/base/SeeTheFutureEffect.ts",
+		"/home/rem/git/d7032e-home-exam/core/src/interfaces/IEffectContext.ts",
+		"/home/rem/git/d7032e-home-exam/core/src/expansions/base/TwoOfAKindEffect.ts",
+		"/home/rem/git/d7032e-home-exam/core/src/engine/GameEngine.ts",
+		"/home/rem/git/d7032e-home-exam/client/index.html",
+		"/home/rem/git/d7032e-home-exam/core/src/models/Types.ts",
+		"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/SeeTheFutureDialog.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/components/PlayerHand.tsx",
+		"/home/rem/git/d7032e-home-exam/core/tests/GameEngine.test.ts",
+		"/mnt/NAS/Universitetet/D7032E/Home Exam/ExplodingKittens.java",
+		"/home/rem/git/d7032e-home-exam/client/src/App.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/utils/cardAssets.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/components/OpponentRing.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/index.css",
+		"/home/rem/git/d7032e-home-exam/client/src/components/ToastOverlay.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/NopeInterruptWindow.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/types/game.ts",
+		"/home/rem/git/d7032e-home-exam/client/src/components/Lobby.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/DefuseDialog.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/TargetSelectionDialog.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/FavorPromptDialog.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/StealCardTypeDialog.tsx",
+		"/home/rem/git/d7032e-home-exam/README.md",
+		"/mnt/NAS/Universitetet/Arkiv/D0029E/ctf/3/solve3.py",
+		"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/Lobby.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/OpponentRing.tsx",
+		"/home/rem/git/d7032e-home-exam/client/src/types.ts",
+		"/mnt/NAS/Universitetet/Arkiv/D0029E/ctf/2/solve2.py",
+		"/mnt/NAS/Universitetet/Arkiv/D0029E/ctf/4/solve4.py",
+		"/home/rem/git/ctf-platform/src/index.html",
+		"/home/rem/git/ctf-platform/src/app.js",
+		"/home/rem/git/d7032e-home-exam/core/tsconfig.json",
+		"/home/rem/git/d7032e-home-exam/core/src/index.ts",
+		"/home/rem/git/d7032e-home-exam/core/src/engine/ActionResolver.ts",
+		"/home/rem/git/d7032e-home-exam/core/src/expansions/ICardEffect.ts",
+		"/home/rem/git/d7032e-home-exam/core/__mocks__/uuid.js",
+		"/mnt/NAS/Documents [cloud]/Datasektionen 26-27/Anteckningar Kårenmöte 2026-10-12",
+		"/home/rem/git/ctf-platform/.gitlab-ci.yml",
+		"/home/rem/git/ctf-platform/src/style.css",
+		"/home/rem/git/ctf-platform/Dockerfile",
+		"/home/rem/git/d7032e-home-exam/core/src/models/GameState.ts",
 		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap",
 		"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/Default/Default (Linux).sublime-keymap",
-		"/home/rem/.config/waybar/power_menu.xml",
-		"/home/rem/Downloads/eduroam-linux-LUoT.py",
-		"/home/rem/.config/kitty/kitty",
-		"/var/lib/iwd/eduroam.8021x",
-		"/home/rem/.config/kitty/config.json",
-		"/home/rem/.config/kitty/config.jsonc",
-		"/home/rem/.config/sublime-text/Packages/User/Preferences.sublime-settings",
-		"/home/rem/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
-		"/home/rem/.config/sublime-text/Packages/Theme - Default/Default Dark.sublime-theme",
-		"/home/rem/.config/sublime-text/Packages/User/Default Dark.sublime-theme",
-		"/home/rem/.config/sublime-text/Packages/User/JSON.sublime-settings",
-		"/home/rem/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap",
-		"/home/rem/.config/sublime-text/Packages/Default/Default (Linux).sublime-keymap"
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/routes/teams.routes.ts",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/repositories/teams.repo.ts",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/repositories/clubs.repo.ts",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/db.ts",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/teams.service.ts",
+		"/home/rem/Downloads/mR.html",
+		"/home/rem/git/d7032e-home-exam/core/.gitignore",
+		"/home/rem/git/d7032e-home-exam/server/.gitignore",
+		"/home/rem/git/d7032e-home-exam/server/package.json",
+		"/home/rem/git/d7032e-home-exam/client/vite.config.ts",
+		"/home/rem/git/d7032e-home-exam/core/models/Types.ts",
+		"/home/rem/git/d7032e-home-exam/client/src/assets/react.svg",
+		"/home/rem/git/d7032e-home-exam/server/index.tsx",
+		"/home/rem/dotfiles/waybar/.config/waybar/config.jsonc",
+		"/home/rem/dotfiles/waybar/.config/waybar/scripts/lastfm.py",
+		"/home/rem/ns-allinone-3.47/ns-3.47/scratch/Lab2_Cpp_Scenario1.cc",
+		"/home/rem/Downloads/DaVinci & Crapht",
+		"/mnt/NAS/Documents [cloud]/Datasektionen 26-27/DaVinci & Crapht",
+		"/home/rem/git/frontend/src/components/ha-card.ts",
+		"/home/rem/git/frontend/src/panels/lovelace/editor/card-editor/hui-dialog-suggest-card.ts",
+		"/home/rem/git/frontend/node_modules/date-fns/fp/differenceInCalendarWeeks.d.ts",
+		"/home/rem/git/Last.fm-Discord-Rich-Presence/package.json",
+		"/home/rem/.local/share/applications/last.fm-rich-presence.desktop",
+		"/home/rem/git/frontend/src/panels/energy/ha-panel-energy.ts",
+		"/home/rem/git/frontend/src/data/automation.ts",
+		"/home/rem/git/D7030E/D7030E/Lab-01-Propagation/submission/initial_distance_cost231.txt",
+		"/home/rem/git/D7030E/D7030E/Lab-00-Introduction/submission/hello_output.txt",
+		"/home/rem/.config/waybar/config.jsonc",
+		"/home/rem/.config/waybar/style.css",
+		"/home/rem/.config/waybar/scripts/lastfm.py",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/clock.service.ts",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/types/wsTypes.ts",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/websocket/LiveMatchService.ts",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/ws.service.ts",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/match.tsx",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/clock/MatchClock.tsx",
+		"/mnt/NAS/Universitetet/D7032E/A2/assignment3testing-JAVA26/assignment3testing/src/ltu/PaymentTest.java",
+		"/home/rem/Downloads/message.txt",
+		"/home/rem/.cache/.fr-V4Z7U3/Unix/main.typ",
+		"/home/rem/git/px-weatherwidget/weather.py",
+		"/home/rem/Downloads/Telegram Desktop/Transaktioner_2026-09-01_20-34-14.csv",
+		"/home/rem/Downloads/Telegram Desktop/Transaktioner_2026-09-01_20-34-33.csv",
+		"/home/rem/Downloads/Telegram Desktop/Transaktioner_2026-09-01_20-33-56.csv",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/index.ts",
+		"/home/rem/git/ludd-arg/jailbreak/server.js",
+		"/home/rem/git/ludd-arg/git-history/states/03_feat/backend/api.py",
+		"/home/rem/git/ludd-arg/git-history/gen.sh",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/README.md",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/clock/MatchTime.tsx"
 	],
 	"folder_history":
 	[
+		"/home/rem/git/goodgame",
+		"/home/rem/git/GGBot",
+		"/home/rem/git",
+		"/home/rem/git/d7032e-home-exam",
 		"/home/rem/.config",
-		"/home/rem/.config/sway",
+		"/home/rem/git/royalroppers.github.io",
+		"/home/rem/git/frostbyte-ltu",
+		"/mnt/NAS/Universitetet/Arkiv/D0029E/ctf",
+		"/home/rem/git/ctf-platform",
 		"/home/rem/git/buzzing_hoopers",
+		"/mnt/NAS/Universitetet/D7032E/Home Exam",
+		"/home/rem/dotfiles/waybar/.config/waybar",
+		"/mnt/NAS/Universitetet/Arkiv/D0029E/Labs/Lab2",
+		"/home/rem/ns-allinone-3.47/ns-3.47",
+		"/home/rem/git/frontend",
+		"/home/rem/git/Last.fm-Discord-Rich-Presence",
 		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend",
+		"/home/rem/git/D7030E",
+		"/home/rem/git/D7030E/D7030E",
+		"/home/rem/ns-allinone-3.47/ns-3.47/scratch",
+		"/home/rem/git/lab0b",
+		"/mnt/NAS/Universitetet/D7032E/A2/assignment3testing-JAVA26/assignment3testing",
+		"/home/rem/git/px-badapple",
+		"/home/rem/git/px-weatherwidget",
+		"/home/rem/.config/sway",
+		"/home/rem/Downloads",
+		"/home/rem/git/ludd-arg/jailbreak",
+		"/home/rem/git/ludd-arg/git-history",
+		"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend",
 		"/home/rem/ctf/SNHT2026/Speedrun",
 		"/home/rem/git/companion-recorder",
 		"/home/rem/git/VoiceOfNature.github.io",
@@ -121,14 +169,14 @@
 		"/home/rem/ctf/SNHT2026/UUID Guesser",
 		"/home/rem/.config/waybar"
 	],
-	"last_version": 4200,
-	"last_window_id": 41,
+	"last_version": 4215,
+	"last_window_id": 112,
 	"log_indexing": false,
-	"next_update_check": 1783772228,
+	"next_update_check": 1793004821,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 576.0,
+		"new_window_height": 1156.0,
 		"new_window_maximized": false,
 		"new_window_position":
 		[
@@ -158,8 +206,60 @@
 						"Set Syntax: Bash"
 					],
 					[
+						"waka",
+						"WakaTime: Open Dashboard"
+					],
+					[
+						"lsp-cop",
+						"Preferences: LSP-copilot Settings"
+					],
+					[
+						"lsp",
+						"LSP: Restart Server"
+					],
+					[
 						"enable",
 						"Package Control: Enable Package"
+					],
+					[
+						"key",
+						"Preferences: Key Bindings"
+					],
+					[
+						"install pa",
+						"Package Control: Install Package"
+					],
+					[
+						"remove pace",
+						"Package Control: Remove Package"
+					],
+					[
+						"enable language",
+						"LSP: Enable Language Server in Project"
+					],
+					[
+						"upgrade",
+						"Package Control: Upgrade All Packages"
+					],
+					[
+						"enable lag",
+						"LSP: Enable Language Server in Project"
+					],
+					[
+						"enable la",
+						"LSP: Enable Language Server Globally"
+					],
+					[
+						"typesc",
+						"Set Syntax: TypeScript"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"wakat",
+						"WakaTime: Open Dashboard"
 					],
 					[
 						"disa",
@@ -180,10 +280,6 @@
 					[
 						"packa",
 						"Package Control: List Packages"
-					],
-					[
-						"package",
-						"Package Control: Enable Package"
 					],
 					[
 						"pyt",
@@ -251,103 +347,142 @@
 			},
 			"file_history":
 			[
+				"/home/rem/git/goodgame/GGWeb/src/app/join/[id]/route.ts",
 				"/home/rem/.config/sway/config",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/backend/src/db.ts",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/.gitlab-ci.yml",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/clock.service.ts",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/backend/src/services/clock.service.ts",
+				"/home/rem/git/goodgame/GGWeb/src/lib/oauth.ts",
+				"/home/rem/git/goodgame/GGWeb/src/lib/constants.ts",
+				"/home/rem/git/d7032e-home-exam/core/package-lock.json",
+				"/home/rem/git/d7032e-home-exam/.gitlab-ci.yml",
+				"/home/rem/git/d7032e-home-exam/core/jest.config.js",
+				"/home/rem/git/d7032e-home-exam/core/package.json",
+				"/home/rem/git/d7032e-home-exam/core/setup-jasmine-env.js",
+				"/home/rem/git/frostbyte-ltu/src/components/Sponsors.tsx",
+				"/home/rem/git/frostbyte-ltu/src/components/Ctfs.tsx",
+				"/home/rem/git/frostbyte-ltu/src/components/Meetups.tsx",
+				"/home/rem/git/frostbyte-ltu/src/components/Footer.tsx",
+				"/home/rem/git/frostbyte-ltu/src/components/About.tsx",
+				"/home/rem/git/frostbyte-ltu/src/components/Header.tsx",
+				"/home/rem/git/frostbyte-ltu/src/App.tsx",
+				"/home/rem/git/frostbyte-ltu/frostbyte-ltu/package.json",
+				"/home/rem/.config/sway/rotate.sh",
+				"/home/rem/git/frostbyte-ltu/vite.config.ts",
+				"/home/rem/git/frostbyte-ltu/src/index.css",
+				"/home/rem/git/frostbyte-ltu/index.html",
+				"/home/rem/git/frostbyte-ltu/src/App.css",
+				"/home/rem/git/d7032e-home-exam/client/.env.development",
+				"/home/rem/git/d7032e-home-exam/.dockerignore",
+				"/home/rem/git/d7032e-home-exam/docker-compose.yml",
+				"/home/rem/git/d7032e-home-exam/Dockerfile",
+				"/home/rem/git/d7032e-home-exam/server/src/index.ts",
+				"/home/rem/git/d7032e-home-exam/client/src/components/CenterTable.tsx",
+				"/home/rem/git/d7032e-home-exam/client/tsconfig.json",
+				"/home/rem/git/d7032e-home-exam/client/src/hooks/useGameEngine.ts",
+				"/home/rem/git/d7032e-home-exam/server/package-lock.json",
+				"/home/rem/git/d7032e-home-exam/core/src/engine/DeckFactory.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/ThreeOfAKindEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/AttackEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/SkipEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/ShuffleEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/FavorEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/SeeTheFutureEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/interfaces/IEffectContext.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/TwoOfAKindEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/engine/GameEngine.ts",
+				"/home/rem/git/d7032e-home-exam/client/index.html",
+				"/home/rem/git/d7032e-home-exam/core/src/models/Types.ts",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/SeeTheFutureDialog.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/PlayerHand.tsx",
+				"/home/rem/git/d7032e-home-exam/core/tests/GameEngine.test.ts",
+				"/mnt/NAS/Universitetet/D7032E/Home Exam/ExplodingKittens.java",
+				"/home/rem/git/d7032e-home-exam/client/src/App.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/utils/cardAssets.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/OpponentRing.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/index.css",
+				"/home/rem/git/d7032e-home-exam/client/src/components/ToastOverlay.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/NopeInterruptWindow.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/types/game.ts",
+				"/home/rem/git/d7032e-home-exam/client/src/components/Lobby.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/DefuseDialog.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/TargetSelectionDialog.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/FavorPromptDialog.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/StealCardTypeDialog.tsx",
+				"/home/rem/git/d7032e-home-exam/README.md",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/Lobby.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/OpponentRing.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/types.ts",
+				"/home/rem/git/ctf-platform/src/index.html",
+				"/home/rem/git/ctf-platform/src/app.js",
+				"/home/rem/git/d7032e-home-exam/core/tsconfig.json",
+				"/home/rem/git/d7032e-home-exam/core/src/index.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/engine/ActionResolver.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/ICardEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/__mocks__/uuid.js",
+				"/mnt/NAS/Documents [cloud]/Datasektionen 26-27/Anteckningar Kårenmöte 2026-10-12",
+				"/home/rem/git/ctf-platform/.gitlab-ci.yml",
+				"/home/rem/git/ctf-platform/src/style.css",
+				"/home/rem/git/ctf-platform/Dockerfile",
+				"/home/rem/git/d7032e-home-exam/core/src/models/GameState.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/routes/teams.routes.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/repositories/teams.repo.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/repositories/clubs.repo.ts",
 				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/db.ts",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/tsconfig.json",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/team.tsx",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/package-lock.json",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/match.tsx",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/match/EventLog.tsx",
-				"/home/rem/git/companion-recorder/src/index.tsx",
-				"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/User/WakaTime.sublime-settings",
-				"/home/rem/Downloads/chall.py",
-				"/home/rem/git/VoiceOfNature.github.io/images/airplane-window.jpeg",
-				"/home/rem/git/VoiceOfNature.github.io/images/city.jpeg",
-				"/home/rem/.config/xdg-desktop-portal-wlr/config",
-				"/home/rem/.config/waybar/style.css",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/teams.service.ts",
+				"/home/rem/Downloads/mR.html",
+				"/home/rem/git/d7032e-home-exam/core/.gitignore",
+				"/home/rem/git/d7032e-home-exam/server/.gitignore",
+				"/home/rem/git/d7032e-home-exam/server/package.json",
+				"/home/rem/git/d7032e-home-exam/client/vite.config.ts",
+				"/home/rem/git/d7032e-home-exam/core/models/Types.ts",
+				"/home/rem/git/d7032e-home-exam/client/src/assets/react.svg",
+				"/home/rem/git/d7032e-home-exam/server/index.tsx",
+				"/home/rem/Downloads/DaVinci & Crapht",
+				"/mnt/NAS/Documents [cloud]/Datasektionen 26-27/DaVinci & Crapht",
+				"/home/rem/ns-allinone-3.47/ns-3.47/scratch/Lab2_Cpp_Scenario1.cc",
+				"/home/rem/git/frontend/src/panels/lovelace/editor/card-editor/hui-dialog-suggest-card.ts",
+				"/home/rem/git/frontend/src/components/ha-card.ts",
+				"/home/rem/git/frontend/node_modules/date-fns/fp/differenceInCalendarWeeks.d.ts",
+				"/home/rem/.local/share/applications/last.fm-rich-presence.desktop",
+				"/home/rem/git/Last.fm-Discord-Rich-Presence/package.json",
+				"/home/rem/git/frontend/src/panels/energy/ha-panel-energy.ts",
+				"/home/rem/git/frontend/src/data/automation.ts",
+				"/home/rem/git/D7030E/D7030E/Lab-00-Introduction/submission/hello_output.txt",
+				"/home/rem/git/D7030E/D7030E/Lab-01-Propagation/submission/initial_distance_cost231.txt",
 				"/home/rem/.config/waybar/config.jsonc",
-				"/home/rem/.config/waybar/scripts/updates.sh",
-				"/home/rem/.config/waybar/scripts/tailscale.sh",
-				"/home/rem/.config/pulse/cookie",
-				"/usr/lib/systemd/user/xdg-desktop-portal.service",
-				"/mnt/NAS/README.txt",
-				"/home/rem/.cache/.fr-QINXP3/startserver.bat",
-				"/home/rem/Downloads/teknik_stadgar.md",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/docker-compose.yaml",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Caddyfile",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/.env",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/Dockerfile",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/chall/www/message.php",
-				"/home/rem/Documents/STUK/Formulasittning.md",
-				"/home/rem/Downloads/farthallare.m",
-				"/home/rem/ctf/SNHT2026FINAL/autograph/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/autograph/net-autograph.go",
-				"/home/rem/ctf/SNHT2026FINAL/PowerTower/net-powpowpow.go",
-				"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/PowerTower/test/test.go",
-				"/home/rem/.config/swaync/style.css",
-				"/home/rem/.config/swaync/config.json",
-				"/home/rem/ctf/SNHT2026FINAL/JAAS/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
-				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/Dockerfile",
-				"/home/rem/dotfiles/kitty/.config/kitty/kitty.conf",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/curl.php",
-				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/flagout.c",
-				"/home/rem/ctf/SNHT2026FINAL/Meck/handout.zip",
-				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/app.py",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Dockerfile",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/token_middleware.php",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/health.php",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/nginx/nginx.conf",
-				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/bot/bot.js",
-				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/nginx/nginx.conf",
-				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/.FLAG.txt",
-				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/server.js",
-				"/home/rem/ctf/SNHT2026FINAL/RandomInit/random-init.go",
-				"/home/rem/ctf/SNHT2026FINAL/RandomInit/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/server.py",
-				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/solve.",
-				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/static/index.html",
-				"/home/rem/ctf/SNHT2026FINAL/JAAS/deconstruct.js",
-				"/home/rem/ctf/SNHT2026FINAL/RandomInit/output.txt",
-				"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve",
-				"/home/rem/Downloads/boot.py",
-				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/deconstruct.js",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/docker-compose.yml",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.html",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/notes.txt",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.js",
-				"/home/rem/Downloads/output.txt",
-				"/home/rem/ctf/SNHT2026FINAL/nyheter/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/mariadb/init.sql.example",
-				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/chall/solve.py",
-				"/home/rem/Downloads/doc_data.txt",
-				"/home/rem/.config/swaylock/config",
-				"/etc/default/grub",
-				"/home/rem/.config/kitty/kitty.conf",
-				"/home/rem/.config/waybar/power_menu.xml",
-				"/home/rem/Downloads/eduroam-linux-LUoT.py",
-				"/home/rem/.config/kitty/kitty",
-				"/var/lib/iwd/eduroam.8021x",
-				"/home/rem/.config/kitty/config.json",
-				"/home/rem/.config/kitty/config.jsonc",
-				"/home/rem/.config/sublime-text/Packages/User/Preferences.sublime-settings",
-				"/home/rem/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
-				"/home/rem/.config/sublime-text/Packages/Theme - Default/Default Dark.sublime-theme",
-				"/home/rem/.config/sublime-text/Packages/User/Default Dark.sublime-theme"
+				"/home/rem/.config/waybar/style.css",
+				"/home/rem/.config/waybar/scripts/lastfm.py",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/clock.service.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/types/wsTypes.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/websocket/LiveMatchService.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/clock/MatchClock.tsx",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/ws.service.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/match.tsx",
+				"/mnt/NAS/Universitetet/D7032E/A2/assignment3testing-JAVA26/assignment3testing/src/ltu/PaymentTest.java",
+				"/home/rem/Downloads/message.txt",
+				"/home/rem/.cache/.fr-V4Z7U3/Unix/main.typ",
+				"/home/rem/git/px-weatherwidget/weather.py",
+				"/home/rem/Downloads/Telegram Desktop/Transaktioner_2026-09-01_20-34-14.csv",
+				"/home/rem/Downloads/Telegram Desktop/Transaktioner_2026-09-01_20-34-33.csv",
+				"/home/rem/Downloads/Telegram Desktop/Transaktioner_2026-09-01_20-33-56.csv",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/index.ts",
+				"/home/rem/git/ludd-arg/jailbreak/server.js",
+				"/home/rem/git/ludd-arg/git-history/gen.sh",
+				"/home/rem/git/ludd-arg/git-history/states/03_feat/backend/api.py",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/README.md",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/clock/MatchTime.tsx",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/clock/Period.tsx",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/scoreboardview.tsx",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/forge.config.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/misc/Navbar.tsx",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/package.json",
+				"/home/rem/git/ludd-arg/jailbreak/package.json"
 			],
 			"find":
 			{
-				"height": 60.0
+				"height": 26.0
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 148.0,
 				"where_history":
 				[
 				]
@@ -389,6 +524,13 @@
 				[
 				]
 			},
+			"output.LSP Messages":
+			{
+				"height": 43.0,
+				"history":
+				[
+				]
+			},
 			"output.diagnostics":
 			{
 				"height": 0.0,
@@ -410,6 +552,13 @@
 				[
 				]
 			},
+			"output.mdpopups-dummy":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
 			"pinned_build_system": "",
 			"replace":
 			{
@@ -422,6 +571,10 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"pick different card",
+						"node_modules/date-fns/fp/differenceInCalendarWeeks.d.ts"
+					],
 					[
 						"",
 						"import pwn as p"
@@ -440,18 +593,18 @@
 			},
 			"select_symbol":
 			{
-				"height": 0.0,
+				"height": 376.0,
 				"last_filter": "",
 				"selected_items":
 				[
 				],
-				"width": 0.0
+				"width": 524.0
 			},
 			"show_minimap": true,
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 198.0,
+			"side_bar_width": 264.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
@@ -471,294 +624,143 @@
 			"buffers":
 			[
 				{
-					"file": "/home/rem/.config/sway/config",
+					"file": "/home/rem/git/goodgame/GGWeb/src/lib/constants.ts",
+					"file_size": 1210,
+					"file_write_time": 134373478840061755,
 					"settings":
 					{
-						"buffer_size": 9545,
+						"buffer_size": 1210,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/rem/git/goodgame/GGWeb/src/lib/oauth.ts",
+					"file_size": 377,
+					"file_write_time": 134373479570550799,
+					"settings":
+					{
+						"buffer_size": 377,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					},
 					"undo_stack":
 					[
 						[
-							5,
-							1,
-							"insert",
-							{
-								"characters": "\n\n#"
-							},
-							"BAAAALUIAAAAAAAAuggAAAAAAAAAAAAAuggAAAAAAAC/CAAAAAAAAAAAAAC2CAAAAAAAALYIAAAAAAAABAAAACAgICC7CAAAAAAAALwIAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAtQgAAAAAAAC1CAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							6,
-							1,
-							"insert",
-							{
-								"characters": " Custom"
-							},
-							"BwAAALwIAAAAAAAAvQgAAAAAAAAAAAAAvQgAAAAAAAC+CAAAAAAAAAAAAAC+CAAAAAAAAL8IAAAAAAAAAAAAAL8IAAAAAAAAwAgAAAAAAAAAAAAAwAgAAAAAAADBCAAAAAAAAAAAAADBCAAAAAAAAMIIAAAAAAAAAAAAAMIIAAAAAAAAwwgAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAvAgAAAAAAAC8CAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							7,
-							1,
-							"insert",
-							{
-								"characters": " programs"
-							},
-							"CQAAAMMIAAAAAAAAxAgAAAAAAAAAAAAAxAgAAAAAAADFCAAAAAAAAAAAAADFCAAAAAAAAMYIAAAAAAAAAAAAAMYIAAAAAAAAxwgAAAAAAAAAAAAAxwgAAAAAAADICAAAAAAAAAAAAADICAAAAAAAAMkIAAAAAAAAAAAAAMkIAAAAAAAAyggAAAAAAAAAAAAAyggAAAAAAADLCAAAAAAAAAAAAADLCAAAAAAAAMwIAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAwwgAAAAAAADDCAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							9,
-							1,
-							"insert",
-							{
-								"characters": "\nbindsym"
-							},
-							"CAAAAMwIAAAAAAAA0QgAAAAAAAAAAAAA0QgAAAAAAADSCAAAAAAAAAAAAADSCAAAAAAAANMIAAAAAAAAAAAAANMIAAAAAAAA1AgAAAAAAAAAAAAA1AgAAAAAAADVCAAAAAAAAAAAAADVCAAAAAAAANYIAAAAAAAAAAAAANYIAAAAAAAA1wgAAAAAAAAAAAAA1wgAAAAAAADYCAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAzAgAAAAAAADMCAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							10,
-							1,
-							"insert",
-							{
-								"characters": " $md"
-							},
-							"BAAAANgIAAAAAAAA2QgAAAAAAAAAAAAA2QgAAAAAAADaCAAAAAAAAAAAAADaCAAAAAAAANsIAAAAAAAAAAAAANsIAAAAAAAA3AgAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA2AgAAAAAAADYCAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							11,
-							1,
-							"left_delete",
-							null,
-							"AQAAANsIAAAAAAAA2wgAAAAAAAABAAAAZA",
-							"AQAAAAAAAAABAAAA3AgAAAAAAADcCAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							12,
-							1,
-							"insert",
-							{
-								"characters": "od+0"
-							},
-							"BAAAANsIAAAAAAAA3AgAAAAAAAAAAAAA3AgAAAAAAADdCAAAAAAAAAAAAADdCAAAAAAAAN4IAAAAAAAAAAAAAN4IAAAAAAAA3wgAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA2wgAAAAAAADbCAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							13,
-							1,
-							"left_delete",
-							null,
-							"AQAAAN4IAAAAAAAA3ggAAAAAAAABAAAAMA",
-							"AQAAAAAAAAABAAAA3wgAAAAAAADfCAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							14,
-							1,
-							"insert",
-							{
-								"characters": "Shift+b"
-							},
-							"BwAAAN4IAAAAAAAA3wgAAAAAAAAAAAAA3wgAAAAAAADgCAAAAAAAAAAAAADgCAAAAAAAAOEIAAAAAAAAAAAAAOEIAAAAAAAA4ggAAAAAAAAAAAAA4ggAAAAAAADjCAAAAAAAAAAAAADjCAAAAAAAAOQIAAAAAAAAAAAAAOQIAAAAAAAA5QgAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA3ggAAAAAAADeCAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							15,
-							1,
-							"left_delete",
-							null,
-							"AQAAAOQIAAAAAAAA5AgAAAAAAAABAAAAYg",
-							"AQAAAAAAAAABAAAA5QgAAAAAAADlCAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							16,
-							1,
-							"copilot_accept_completion",
-							null,
-							"AgAAAM0IAAAAAAAAzQgAAAAAAAAXAAAAICAgIGJpbmRzeW0gJG1vZCtTaGlmdCvNCAAAAAAAAPgIAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA5AgAAAAAAADkCAAAAAAAAAAAAAAAAPC/"
-						],
-						[
 							17,
-							19,
-							"left_delete",
-							null,
-							"EwAAAPcIAAAAAAAA9wgAAAAAAAABAAAAcPYIAAAAAAAA9ggAAAAAAAABAAAAb/UIAAAAAAAA9QgAAAAAAAABAAAAdPQIAAAAAAAA9AgAAAAAAAABAAAAaPMIAAAAAAAA8wgAAAAAAAABAAAAIPIIAAAAAAAA8ggAAAAAAAABAAAAZfEIAAAAAAAA8QgAAAAAAAABAAAALfAIAAAAAAAA8AgAAAAAAAABAAAAIO8IAAAAAAAA7wgAAAAAAAABAAAAee4IAAAAAAAA7ggAAAAAAAABAAAAdO0IAAAAAAAA7QgAAAAAAAABAAAAdOwIAAAAAAAA7AgAAAAAAAABAAAAaesIAAAAAAAA6wgAAAAAAAABAAAAa+oIAAAAAAAA6ggAAAAAAAABAAAAIOkIAAAAAAAA6QgAAAAAAAABAAAAY+gIAAAAAAAA6AgAAAAAAAABAAAAZecIAAAAAAAA5wgAAAAAAAABAAAAeOYIAAAAAAAA5ggAAAAAAAABAAAAZeUIAAAAAAAA5QgAAAAAAAABAAAAIA",
-							"AQAAAAAAAAABAAAA+AgAAAAAAAD4CAAAAAAAAAAAAAAAAPC/"
+							1,
+							"insert",
+							{
+								"characters": "\nc"
+							},
+							"AwAAAPAAAAAAAAAA8QAAAAAAAAAAAAAA8QAAAAAAAAD1AAAAAAAAAAAAAAD1AAAAAAAAAPYAAAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPAAAAAAAAAA8AAAAAAAAAAAAAAAAADwvw"
 						],
 						[
 							18,
 							1,
-							"insert",
-							{
-								"characters": " "
-							},
-							"AQAAAOUIAAAAAAAA5ggAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA5QgAAAAAAADlCAAAAAAAAAAAAAAAAPC/"
+							"left_delete",
+							null,
+							"AQAAAPUAAAAAAAAA9QAAAAAAAAABAAAAYw",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPYAAAAAAAAA9gAAAAAAAAAAAAAAAADwvw"
 						],
 						[
 							19,
 							1,
-							"left_delete",
-							null,
-							"AQAAAOUIAAAAAAAA5QgAAAAAAAABAAAAIA",
-							"AQAAAAAAAAABAAAA5ggAAAAAAADmCAAAAAAAAAAAAAAAAPC/"
+							"insert",
+							{
+								"characters": "\to"
+							},
+							"AgAAAPUAAAAAAAAA+QAAAAAAAAAAAAAA+QAAAAAAAAD6AAAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPUAAAAAAAAA9QAAAAAAAAAAAAAAAADwvw"
 						],
 						[
 							20,
 							1,
-							"insert",
-							{
-								"characters": " tidal-"
-							},
-							"BwAAAOUIAAAAAAAA5ggAAAAAAAAAAAAA5ggAAAAAAADnCAAAAAAAAAAAAADnCAAAAAAAAOgIAAAAAAAAAAAAAOgIAAAAAAAA6QgAAAAAAAAAAAAA6QgAAAAAAADqCAAAAAAAAAAAAADqCAAAAAAAAOsIAAAAAAAAAAAAAOsIAAAAAAAA7AgAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA5QgAAAAAAADlCAAAAAAAAAAAAAAAAPC/"
+							"left_delete",
+							null,
+							"AQAAAPkAAAAAAAAA+QAAAAAAAAABAAAAbw",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPoAAAAAAAAA+gAAAAAAAAAAAAAAAADwvw"
 						],
 						[
 							21,
 							1,
 							"insert",
 							{
-								"characters": "hi"
+								"characters": "console.log"
 							},
-							"AgAAAOwIAAAAAAAA7QgAAAAAAAAAAAAA7QgAAAAAAADuCAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA7AgAAAAAAADsCAAAAAAAAAAAAAAAAPC/"
+							"CwAAAPkAAAAAAAAA+gAAAAAAAAAAAAAA+gAAAAAAAAD7AAAAAAAAAAAAAAD7AAAAAAAAAPwAAAAAAAAAAAAAAPwAAAAAAAAA/QAAAAAAAAAAAAAA/QAAAAAAAAD+AAAAAAAAAAAAAAD+AAAAAAAAAP8AAAAAAAAAAAAAAP8AAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAABAQAAAAAAAAAAAAABAQAAAAAAAAIBAAAAAAAAAAAAAAIBAAAAAAAAAwEAAAAAAAAAAAAAAwEAAAAAAAAEAQAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPkAAAAAAAAA+QAAAAAAAAAAAAAAAADwvw"
 						],
 						[
 							22,
 							1,
-							"copilot_accept_completion",
-							null,
-							"AgAAAM0IAAAAAAAAzQgAAAAAAAAhAAAAICAgIGJpbmRzeW0gJG1vZCtTaGlmdCt0IHRpZGFsLWhpzQgAAAAAAADwCAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA7ggAAAAAAADuCAAAAAAAAAAAAAAAAPC/"
+							"insert_snippet",
+							{
+								"contents": "($0)"
+							},
+							"AQAAAAQBAAAAAAAABgEAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAQBAAAAAAAABAEAAAAAAAAAAAAAAADwvw"
 						],
 						[
 							23,
 							1,
-							"insert",
-							{
-								"characters": "\n\n"
-							},
-							"AwAAAPAIAAAAAAAA9QgAAAAAAAAAAAAA9QgAAAAAAAD6CAAAAAAAAAAAAADxCAAAAAAAAPEIAAAAAAAABAAAACAgICA",
-							"AQAAAAAAAAABAAAA8AgAAAAAAADwCAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							24,
-							2,
-							"left_delete",
+							"paste",
 							null,
-							"AgAAAPIIAAAAAAAA8ggAAAAAAAAEAAAAICAgIPEIAAAAAAAA8QgAAAAAAAABAAAACg",
-							"AQAAAAAAAAABAAAA9ggAAAAAAAD2CAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							25,
-							1,
-							"reindent",
-							null,
-							"AQAAAPEIAAAAAAAA9QgAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA8QgAAAAAAADxCAAAAAAAAAAAAAAAAPC/"
+							"AQAAAAUBAAAAAAAAKwEAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAUBAAAAAAAABQEAAAAAAAAAAAAAAADwvw"
 						],
 						[
 							26,
 							1,
-							"insert",
-							{
-								"characters": "binds"
-							},
-							"BQAAAPUIAAAAAAAA9ggAAAAAAAAAAAAA9ggAAAAAAAD3CAAAAAAAAAAAAAD3CAAAAAAAAPgIAAAAAAAAAAAAAPgIAAAAAAAA+QgAAAAAAAAAAAAA+QgAAAAAAAD6CAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA9QgAAAAAAAD1CAAAAAAAAAAAAAAAAPC/"
+							"copilot_accept_completion",
+							null,
+							"AgAAAPEAAAAAAAAA8QAAAAAAAAA7AAAAICAgICAgICBjb25zb2xlLmxvZyhPQVVUSDJfVVJMKGdlblN0YXRlKHN0YXRlLCBwYXJhbXMuaWQpKSnxAAAAAAAAAC8BAAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACsBAAAAAAAAKwEAAAAAAAAAAAAAAADwvw"
 						],
 						[
 							27,
 							1,
-							"copilot_accept_completion",
-							null,
-							"AgAAAPEIAAAAAAAA8QgAAAAAAAAJAAAAICAgIGJpbmRz8QgAAAAAAAAeCQAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAA+ggAAAAAAAD6CAAAAAAAAAAAAAAAAPC/"
+							"insert",
+							{
+								"characters": "\n"
+							},
+							"AgAAAC8BAAAAAAAAMAEAAAAAAAAAAAAAMAEAAAAAAAA4AQAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAC8BAAAAAAAALwEAAAAAAAAAAAAAAADwvw"
 						],
 						[
 							28,
-							22,
+							3,
 							"left_delete",
 							null,
-							"FgAAAB0JAAAAAAAAHQkAAAAAAAABAAAAdxwJAAAAAAAAHAkAAAAAAAABAAAAbxsJAAAAAAAAGwkAAAAAAAABAAAAZBoJAAAAAAAAGgkAAAAAAAABAAAAbhkJAAAAAAAAGQkAAAAAAAABAAAAaRgJAAAAAAAAGAkAAAAAAAABAAAAdxcJAAAAAAAAFwkAAAAAAAABAAAALRYJAAAAAAAAFgkAAAAAAAABAAAAdxUJAAAAAAAAFQkAAAAAAAABAAAAZRQJAAAAAAAAFAkAAAAAAAABAAAAbhMJAAAAAAAAEwkAAAAAAAABAAAALRIJAAAAAAAAEgkAAAAAAAABAAAALREJAAAAAAAAEQkAAAAAAAABAAAAIBAJAAAAAAAAEAkAAAAAAAABAAAAeA8JAAAAAAAADwkAAAAAAAABAAAAbw4JAAAAAAAADgkAAAAAAAABAAAAZg0JAAAAAAAADQkAAAAAAAABAAAAZQwJAAAAAAAADAkAAAAAAAABAAAAcgsJAAAAAAAACwkAAAAAAAABAAAAaQoJAAAAAAAACgkAAAAAAAABAAAAZgkJAAAAAAAACQkAAAAAAAABAAAAIAgJAAAAAAAACAkAAAAAAAABAAAAZg",
-							"AQAAAAAAAAABAAAAHgkAAAAAAAAeCQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							29,
-							1,
-							"insert",
-							{
-								"characters": "s"
-							},
-							"AQAAAAgJAAAAAAAACQkAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAACAkAAAAAAAAICQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							30,
-							1,
-							"left_delete",
-							null,
-							"AQAAAAgJAAAAAAAACAkAAAAAAAABAAAAcw",
-							"AQAAAAAAAAABAAAACQkAAAAAAAAJCQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							31,
-							1,
-							"insert",
-							{
-								"characters": "t"
-							},
-							"AQAAAAgJAAAAAAAACQkAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAACAkAAAAAAAAICQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							32,
-							1,
-							"left_delete",
-							null,
-							"AQAAAAgJAAAAAAAACAkAAAAAAAABAAAAdA",
-							"AQAAAAAAAAABAAAACQkAAAAAAAAJCQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							33,
-							1,
-							"insert",
-							{
-								"characters": "v"
-							},
-							"AQAAAAgJAAAAAAAACQkAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAACAkAAAAAAAAICQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							36,
-							1,
-							"left_delete",
-							null,
-							"AQAAAAgJAAAAAAAACAkAAAAAAAABAAAAdg",
-							"AQAAAAAAAAABAAAACQkAAAAAAAAJCQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							37,
-							19,
-							"left_delete",
-							null,
-							"EwAAAAcJAAAAAAAABwkAAAAAAAABAAAAKwYJAAAAAAAABgkAAAAAAAABAAAAdAUJAAAAAAAABQkAAAAAAAABAAAAZgQJAAAAAAAABAkAAAAAAAABAAAAaQMJAAAAAAAAAwkAAAAAAAABAAAAaAIJAAAAAAAAAgkAAAAAAAABAAAAUwEJAAAAAAAAAQkAAAAAAAABAAAAKwAJAAAAAAAAAAkAAAAAAAABAAAAZP8IAAAAAAAA/wgAAAAAAAABAAAAb/4IAAAAAAAA/ggAAAAAAAABAAAAbf0IAAAAAAAA/QgAAAAAAAABAAAAJPwIAAAAAAAA/AgAAAAAAAABAAAAIPsIAAAAAAAA+wgAAAAAAAABAAAAbfoIAAAAAAAA+ggAAAAAAAABAAAAefkIAAAAAAAA+QgAAAAAAAABAAAAc/gIAAAAAAAA+AgAAAAAAAABAAAAZPcIAAAAAAAA9wgAAAAAAAABAAAAbvYIAAAAAAAA9ggAAAAAAAABAAAAafUIAAAAAAAA9QgAAAAAAAABAAAAYg",
-							"AQAAAAAAAAABAAAACAkAAAAAAAAICQAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							38,
-							2,
-							"left_delete",
-							null,
-							"AgAAAPEIAAAAAAAA8QgAAAAAAAAEAAAAICAgIPAIAAAAAAAA8AgAAAAAAAABAAAACg",
-							"AQAAAAAAAAABAAAA9QgAAAAAAAD1CAAAAAAAAAAAAAAAAPC/"
+							"AwAAADQBAAAAAAAANAEAAAAAAAAEAAAAICAgIDABAAAAAAAAMAEAAAAAAAAEAAAAICAgIC8BAAAAAAAALwEAAAAAAAABAAAACg",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADgBAAAAAAAAOAEAAAAAAAAAAAAAAADwvw"
 						]
 					]
+				},
+				{
+					"file": "/home/rem/.config/sway/config",
+					"file_size": 10048,
+					"file_write_time": 134372299505746320,
+					"settings":
+					{
+						"buffer_size": 10048,
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+					]
+				},
+				{
+					"file": "/home/rem/git/goodgame/GGWeb/src/app/join/[id]/route.ts",
+					"file_size": 164,
+					"file_write_time": 134373478856865183,
+					"settings":
+					{
+						"buffer_size": 164,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
 				}
 			],
 			"build_system": "",
@@ -777,8 +779,60 @@
 						"Set Syntax: Bash"
 					],
 					[
+						"waka",
+						"WakaTime: Open Dashboard"
+					],
+					[
+						"lsp-cop",
+						"Preferences: LSP-copilot Settings"
+					],
+					[
+						"lsp",
+						"LSP: Restart Server"
+					],
+					[
 						"enable",
 						"Package Control: Enable Package"
+					],
+					[
+						"key",
+						"Preferences: Key Bindings"
+					],
+					[
+						"install pa",
+						"Package Control: Install Package"
+					],
+					[
+						"remove pace",
+						"Package Control: Remove Package"
+					],
+					[
+						"enable language",
+						"LSP: Enable Language Server in Project"
+					],
+					[
+						"upgrade",
+						"Package Control: Upgrade All Packages"
+					],
+					[
+						"enable lag",
+						"LSP: Enable Language Server in Project"
+					],
+					[
+						"enable la",
+						"LSP: Enable Language Server Globally"
+					],
+					[
+						"typesc",
+						"Set Syntax: TypeScript"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"wakat",
+						"WakaTime: Open Dashboard"
 					],
 					[
 						"disa",
@@ -799,10 +853,6 @@
 					[
 						"packa",
 						"Package Control: List Packages"
-					],
-					[
-						"package",
-						"Package Control: Enable Package"
 					],
 					[
 						"pyt",
@@ -870,108 +920,165 @@
 			},
 			"expanded_folders":
 			[
-				"/home/rem/.config",
-				"/home/rem/.config/sway"
+				"/home/rem/git/goodgame",
+				"/home/rem/git/goodgame/GGApi",
+				"/home/rem/git/goodgame/GGBot",
+				"/home/rem/git/goodgame/GGWeb",
+				"/home/rem/git/goodgame/GGWeb/public",
+				"/home/rem/git/goodgame/GGWeb/src",
+				"/home/rem/git/goodgame/GGWeb/src/app",
+				"/home/rem/git/goodgame/GGWeb/src/app/join",
+				"/home/rem/git/goodgame/GGWeb/src/app/join/[id]",
+				"/home/rem/git/goodgame/GGWeb/src/app/register",
+				"/home/rem/git/goodgame/GGWeb/src/app/register/minecraft",
+				"/home/rem/git/goodgame/GGWeb/src/app/register/minecraft/[id]",
+				"/home/rem/git/goodgame/GGWeb/src/app/unregister",
+				"/home/rem/git/goodgame/GGWeb/src/app/unregister/minecraft",
+				"/home/rem/git/goodgame/GGWeb/src/app/unregister/minecraft/[id]",
+				"/home/rem/git/goodgame/GGWeb/src/components",
+				"/home/rem/git/goodgame/GGWeb/src/lang",
+				"/home/rem/git/goodgame/GGWeb/src/lib",
+				"/home/rem/git/goodgame/GGWeb/src/pages",
+				"/home/rem/git/goodgame/GGWeb/styles"
 			],
 			"file_history":
 			[
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/backend/src/db.ts",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/.gitlab-ci.yml",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/clock.service.ts",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/backend/src/services/clock.service.ts",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/db.ts",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/tsconfig.json",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/team.tsx",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/package-lock.json",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/match.tsx",
-				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/match/EventLog.tsx",
-				"/home/rem/git/companion-recorder/src/index.tsx",
-				"/home/rem/dotfiles/sublime-text/.config/sublime-text/Packages/User/WakaTime.sublime-settings",
-				"/home/rem/Downloads/chall.py",
-				"/home/rem/git/VoiceOfNature.github.io/images/airplane-window.jpeg",
-				"/home/rem/git/VoiceOfNature.github.io/images/city.jpeg",
-				"/home/rem/.config/xdg-desktop-portal-wlr/config",
-				"/home/rem/.config/waybar/style.css",
-				"/home/rem/.config/waybar/config.jsonc",
-				"/home/rem/.config/waybar/scripts/updates.sh",
-				"/home/rem/.config/waybar/scripts/tailscale.sh",
-				"/home/rem/.config/pulse/cookie",
-				"/usr/lib/systemd/user/xdg-desktop-portal.service",
+				"/home/rem/git/d7032e-home-exam/core/package-lock.json",
+				"/home/rem/git/d7032e-home-exam/.gitlab-ci.yml",
+				"/home/rem/git/d7032e-home-exam/core/jest.config.js",
+				"/home/rem/git/d7032e-home-exam/core/package.json",
+				"/home/rem/git/d7032e-home-exam/core/setup-jasmine-env.js",
 				"/home/rem/.config/sway/config",
-				"/mnt/NAS/README.txt",
-				"/home/rem/.cache/.fr-QINXP3/startserver.bat",
-				"/home/rem/Downloads/teknik_stadgar.md",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/docker-compose.yaml",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Caddyfile",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/.env",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/Dockerfile",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/chall/www/message.php",
-				"/home/rem/Documents/STUK/Formulasittning.md",
-				"/home/rem/Downloads/farthallare.m",
-				"/home/rem/ctf/SNHT2026FINAL/autograph/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/autograph/net-autograph.go",
-				"/home/rem/ctf/SNHT2026FINAL/PowerTower/net-powpowpow.go",
-				"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/PowerTower/test/test.go",
-				"/home/rem/.config/swaync/style.css",
-				"/home/rem/.config/swaync/config.json",
-				"/home/rem/ctf/SNHT2026FINAL/JAAS/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/index.php",
-				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/Dockerfile",
-				"/home/rem/dotfiles/kitty/.config/kitty/kitty.conf",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/curl.php",
-				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/flagout.c",
-				"/home/rem/ctf/SNHT2026FINAL/Meck/handout.zip",
-				"/home/rem/ctf/SNHT2026FINAL/Meck/handout/app.py",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/Dockerfile",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/includes/token_middleware.php",
-				"/home/rem/ctf/SNHT2026FINAL/flagifier/flagifier-dist/src/health.php",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/nginx/nginx.conf",
-				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/bot/bot.js",
-				"/home/rem/ctf/SNHT2026FINAL/Insanitizer/nginx/nginx.conf",
-				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/.FLAG.txt",
-				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/server.js",
-				"/home/rem/ctf/SNHT2026FINAL/RandomInit/random-init.go",
-				"/home/rem/ctf/SNHT2026FINAL/RandomInit/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/server.py",
-				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/solve.",
-				"/home/rem/ctf/SNHT2026FINAL/DoYouGetIt/static/index.html",
-				"/home/rem/ctf/SNHT2026FINAL/JAAS/deconstruct.js",
-				"/home/rem/ctf/SNHT2026FINAL/RandomInit/output.txt",
-				"/home/rem/ctf/SNHT2026FINAL/PowerTower/solve",
-				"/home/rem/Downloads/boot.py",
-				"/home/rem/ctf/SNHT2026FINAL/JAAS/container/deconstruct.js",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/docker-compose.yml",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.html",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/notes.txt",
-				"/home/rem/ctf/SNHT2026FINAL/Sanitizer/bot/bot.js",
-				"/home/rem/Downloads/output.txt",
-				"/home/rem/ctf/SNHT2026FINAL/nyheter/solve.py",
-				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/mariadb/init.sql.example",
-				"/home/rem/ctf/SNHT2026FINAL/nyheter/handout/chall/solve.py",
-				"/home/rem/Downloads/doc_data.txt",
-				"/home/rem/.config/swaylock/config",
-				"/etc/default/grub",
-				"/home/rem/.config/kitty/kitty.conf",
-				"/home/rem/.config/waybar/power_menu.xml",
-				"/home/rem/Downloads/eduroam-linux-LUoT.py",
-				"/home/rem/.config/kitty/kitty",
-				"/var/lib/iwd/eduroam.8021x",
-				"/home/rem/.config/kitty/config.json",
-				"/home/rem/.config/kitty/config.jsonc",
-				"/home/rem/.config/sublime-text/Packages/User/Preferences.sublime-settings",
-				"/home/rem/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
-				"/home/rem/.config/sublime-text/Packages/Theme - Default/Default Dark.sublime-theme",
-				"/home/rem/.config/sublime-text/Packages/User/Default Dark.sublime-theme"
+				"/home/rem/git/frostbyte-ltu/src/components/Sponsors.tsx",
+				"/home/rem/git/frostbyte-ltu/src/components/Ctfs.tsx",
+				"/home/rem/git/frostbyte-ltu/src/components/Meetups.tsx",
+				"/home/rem/git/frostbyte-ltu/src/components/Footer.tsx",
+				"/home/rem/git/frostbyte-ltu/src/components/About.tsx",
+				"/home/rem/git/frostbyte-ltu/src/components/Header.tsx",
+				"/home/rem/git/frostbyte-ltu/src/App.tsx",
+				"/home/rem/git/frostbyte-ltu/frostbyte-ltu/package.json",
+				"/home/rem/.config/sway/rotate.sh",
+				"/home/rem/git/frostbyte-ltu/vite.config.ts",
+				"/home/rem/git/frostbyte-ltu/src/index.css",
+				"/home/rem/git/frostbyte-ltu/index.html",
+				"/home/rem/git/frostbyte-ltu/src/App.css",
+				"/home/rem/git/d7032e-home-exam/client/.env.development",
+				"/home/rem/git/d7032e-home-exam/.dockerignore",
+				"/home/rem/git/d7032e-home-exam/docker-compose.yml",
+				"/home/rem/git/d7032e-home-exam/Dockerfile",
+				"/home/rem/git/d7032e-home-exam/server/src/index.ts",
+				"/home/rem/git/d7032e-home-exam/client/src/components/CenterTable.tsx",
+				"/home/rem/git/d7032e-home-exam/client/tsconfig.json",
+				"/home/rem/git/d7032e-home-exam/client/src/hooks/useGameEngine.ts",
+				"/home/rem/git/d7032e-home-exam/server/package-lock.json",
+				"/home/rem/git/d7032e-home-exam/core/src/engine/DeckFactory.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/ThreeOfAKindEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/AttackEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/SkipEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/ShuffleEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/FavorEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/SeeTheFutureEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/interfaces/IEffectContext.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/base/TwoOfAKindEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/engine/GameEngine.ts",
+				"/home/rem/git/d7032e-home-exam/client/index.html",
+				"/home/rem/git/d7032e-home-exam/core/src/models/Types.ts",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/SeeTheFutureDialog.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/PlayerHand.tsx",
+				"/home/rem/git/d7032e-home-exam/core/tests/GameEngine.test.ts",
+				"/mnt/NAS/Universitetet/D7032E/Home Exam/ExplodingKittens.java",
+				"/home/rem/git/d7032e-home-exam/client/src/App.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/utils/cardAssets.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/OpponentRing.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/index.css",
+				"/home/rem/git/d7032e-home-exam/client/src/components/ToastOverlay.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/NopeInterruptWindow.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/types/game.ts",
+				"/home/rem/git/d7032e-home-exam/client/src/components/Lobby.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/DefuseDialog.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/TargetSelectionDialog.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/FavorPromptDialog.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/StealCardTypeDialog.tsx",
+				"/home/rem/git/d7032e-home-exam/README.md",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/Lobby.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/components/dialogs/OpponentRing.tsx",
+				"/home/rem/git/d7032e-home-exam/client/src/types.ts",
+				"/home/rem/git/ctf-platform/src/index.html",
+				"/home/rem/git/ctf-platform/src/app.js",
+				"/home/rem/git/d7032e-home-exam/core/tsconfig.json",
+				"/home/rem/git/d7032e-home-exam/core/src/index.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/engine/ActionResolver.ts",
+				"/home/rem/git/d7032e-home-exam/core/src/expansions/ICardEffect.ts",
+				"/home/rem/git/d7032e-home-exam/core/__mocks__/uuid.js",
+				"/mnt/NAS/Documents [cloud]/Datasektionen 26-27/Anteckningar Kårenmöte 2026-10-12",
+				"/home/rem/git/ctf-platform/.gitlab-ci.yml",
+				"/home/rem/git/ctf-platform/src/style.css",
+				"/home/rem/git/ctf-platform/Dockerfile",
+				"/home/rem/git/d7032e-home-exam/core/src/models/GameState.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/routes/teams.routes.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/repositories/teams.repo.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/repositories/clubs.repo.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/db.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/teams.service.ts",
+				"/home/rem/Downloads/mR.html",
+				"/home/rem/git/d7032e-home-exam/core/.gitignore",
+				"/home/rem/git/d7032e-home-exam/server/.gitignore",
+				"/home/rem/git/d7032e-home-exam/server/package.json",
+				"/home/rem/git/d7032e-home-exam/client/vite.config.ts",
+				"/home/rem/git/d7032e-home-exam/core/models/Types.ts",
+				"/home/rem/git/d7032e-home-exam/client/src/assets/react.svg",
+				"/home/rem/git/d7032e-home-exam/server/index.tsx",
+				"/home/rem/Downloads/DaVinci & Crapht",
+				"/mnt/NAS/Documents [cloud]/Datasektionen 26-27/DaVinci & Crapht",
+				"/home/rem/ns-allinone-3.47/ns-3.47/scratch/Lab2_Cpp_Scenario1.cc",
+				"/home/rem/git/frontend/src/panels/lovelace/editor/card-editor/hui-dialog-suggest-card.ts",
+				"/home/rem/git/frontend/src/components/ha-card.ts",
+				"/home/rem/git/frontend/node_modules/date-fns/fp/differenceInCalendarWeeks.d.ts",
+				"/home/rem/.local/share/applications/last.fm-rich-presence.desktop",
+				"/home/rem/git/Last.fm-Discord-Rich-Presence/package.json",
+				"/home/rem/git/frontend/src/panels/energy/ha-panel-energy.ts",
+				"/home/rem/git/frontend/src/data/automation.ts",
+				"/home/rem/git/D7030E/D7030E/Lab-00-Introduction/submission/hello_output.txt",
+				"/home/rem/git/D7030E/D7030E/Lab-01-Propagation/submission/initial_distance_cost231.txt",
+				"/home/rem/.config/waybar/config.jsonc",
+				"/home/rem/.config/waybar/style.css",
+				"/home/rem/.config/waybar/scripts/lastfm.py",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/clock.service.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/types/wsTypes.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/websocket/LiveMatchService.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/clock/MatchClock.tsx",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_backend/src/services/ws.service.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/match.tsx",
+				"/mnt/NAS/Universitetet/D7032E/A2/assignment3testing-JAVA26/assignment3testing/src/ltu/PaymentTest.java",
+				"/home/rem/Downloads/message.txt",
+				"/home/rem/.cache/.fr-V4Z7U3/Unix/main.typ",
+				"/home/rem/git/px-weatherwidget/weather.py",
+				"/home/rem/Downloads/Telegram Desktop/Transaktioner_2026-09-01_20-34-14.csv",
+				"/home/rem/Downloads/Telegram Desktop/Transaktioner_2026-09-01_20-34-33.csv",
+				"/home/rem/Downloads/Telegram Desktop/Transaktioner_2026-09-01_20-33-56.csv",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/index.ts",
+				"/home/rem/git/ludd-arg/jailbreak/server.js",
+				"/home/rem/git/ludd-arg/git-history/gen.sh",
+				"/home/rem/git/ludd-arg/git-history/states/03_feat/backend/api.py",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/README.md",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/clock/MatchTime.tsx",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/clock/Period.tsx",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/pages/scoreboardview.tsx",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/forge.config.ts",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/src/components/misc/Navbar.tsx",
+				"/home/rem/git/buzzing_hoopers/buzzing_hoopers_frontend/package.json",
+				"/home/rem/git/ludd-arg/jailbreak/package.json",
+				"/home/rem/git/ludd-arg/jailbreak/.env",
+				"/home/rem/git/ludd-arg/jailbreak/.gitlab-ci.yml",
+				"/home/rem/git/ludd-arg/jailbreak/.dockerignore"
 			],
 			"find":
 			{
-				"height": 60.0
+				"height": 26.0
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 148.0,
 				"where_history":
 				[
 				]
@@ -1000,7 +1107,7 @@
 			"folders":
 			[
 				{
-					"path": "/home/rem/.config"
+					"path": "/home/rem/git/goodgame"
 				}
 			],
 			"groups":
@@ -1010,20 +1117,69 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/rem/.config/sway/config",
-							"selected": true,
+							"file": "/home/rem/git/goodgame/GGWeb/src/lib/constants.ts",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 9545,
+								"buffer_size": 1210,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2288,
-										2288
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"auto_complete_triggers":
+									[
+										{
+											"characters": "<",
+											"selector": "text.html, text.xml"
+										},
+										{
+											"rhs_empty": true,
+											"selector": "punctuation.accessor"
+										}
+									],
+									"copilot.completion._is_saving": false,
+									"copilot.completion.is_visible": false,
+									"copilot.completion.is_visible_panel_completions": false,
+									"copilot.completion.is_waiting_completion": false,
+									"copilot.completion.is_waiting_panel_completions": false,
+									"copilot.completion.original_layout": null,
+									"lsp_active": true,
+									"lsp_uri": "file:///home/rem/git/goodgame/GGWeb/src/lib/constants.ts",
+									"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/rem/git/goodgame/GGWeb/src/lib/oauth.ts",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 377,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										303,
+										303
 									]
 								],
 								"settings":
@@ -1046,34 +1202,34 @@
 									"copilot.completion.completions":
 									[
 										{
-											"displayText": "+f firefox --new-window",
-											"docVersion": 122,
-											"point": 2311,
+											"displayText": ") ||",
+											"docVersion": 24,
+											"point": 299,
 											"position":
 											{
-												"character": 22,
-												"line": 110
+												"character": 58,
+												"line": 5
 											},
 											"range":
 											{
 												"end":
 												{
-													"character": 22,
-													"line": 110
+													"character": 59,
+													"line": 5
 												},
 												"start":
 												{
 													"character": 0,
-													"line": 110
+													"line": 5
 												}
 											},
 											"region":
 											[
-												2289,
-												2311
+												241,
+												300
 											],
-											"text": "    bindsym $mod+Shift+f firefox --new-window",
-											"uuid": "514d539d-b433-4a71-b1f0-aa82e97c064f"
+											"text": "        console.log(OAUTH2_URL(genState(state, params.id))) ||",
+											"uuid": "b6401ed7-0abb-4da5-a218-9db94f22495f"
 										}
 									],
 									"copilot.completion.is_visible": false,
@@ -1082,16 +1238,116 @@
 									"copilot.completion.is_waiting_panel_completions": false,
 									"copilot.completion.original_layout": null,
 									"lsp_active": true,
-									"lsp_uri": "file:///home/rem/.config/sway/config",
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"lsp_uri": "file:///home/rem/git/goodgame/GGWeb/src/lib/oauth.ts",
+									"syntax": "Packages/JavaScript/TypeScript.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 1225.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/rem/.config/sway/config",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 10048,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										569,
+										569
+									]
+								],
+								"settings":
+								{
+									"auto_complete_triggers":
+									[
+										{
+											"characters": "<",
+											"selector": "text.html, text.xml"
+										},
+										{
+											"rhs_empty": true,
+											"selector": "punctuation.accessor"
+										}
+									],
+									"copilot.completion._is_modified": false,
+									"copilot.completion.is_visible": false,
+									"copilot.completion.is_visible_panel_completions": false,
+									"copilot.completion.is_waiting_completion": false,
+									"copilot.completion.is_waiting_panel_completions": false,
+									"copilot.completion.original_layout": null,
+									"lsp_active": true,
+									"lsp_uri": "file:///home/rem/.config/sway/config",
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/rem/git/goodgame/GGWeb/src/app/join/[id]/route.ts",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 164,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										164,
+										164
+									]
+								],
+								"settings":
+								{
+									"auto_complete_triggers":
+									[
+										{
+											"characters": "<",
+											"selector": "text.html, text.xml"
+										},
+										{
+											"rhs_empty": true,
+											"selector": "punctuation.accessor"
+										}
+									],
+									"copilot.completion._is_modified": false,
+									"copilot.completion._is_saving": false,
+									"copilot.completion.is_visible": false,
+									"copilot.completion.is_visible_panel_completions": false,
+									"copilot.completion.is_waiting_completion": false,
+									"copilot.completion.is_waiting_panel_completions": false,
+									"copilot.completion.original_layout": null,
+									"lsp_active": true,
+									"lsp_uri": "file:///home/rem/git/goodgame/GGWeb/src/app/join/%5Bid%5D/route.ts",
+									"syntax": "Packages/JavaScript/TypeScript.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
 							"stack_multiselect": false,
 							"type": "text"
 						}
@@ -1136,6 +1392,13 @@
 				[
 				]
 			},
+			"output.LSP Messages":
+			{
+				"height": 43.0,
+				"history":
+				[
+				]
+			},
 			"output.diagnostics":
 			{
 				"height": 0.0,
@@ -1157,8 +1420,15 @@
 				[
 				]
 			},
+			"output.mdpopups-dummy":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,0,0,953,576,1920,1200,0",
+			"position": "0,0,0,0,0,0,0,953,1156,3840,1200,0",
 			"project": "",
 			"replace":
 			{
@@ -1171,6 +1441,10 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"pick different card",
+						"node_modules/date-fns/fp/differenceInCalendarWeeks.d.ts"
+					],
 					[
 						"",
 						"import pwn as p"
@@ -1189,12 +1463,12 @@
 			},
 			"select_symbol":
 			{
-				"height": 0.0,
+				"height": 376.0,
 				"last_filter": "",
 				"selected_items":
 				[
 				],
-				"width": 0.0
+				"width": 524.0
 			},
 			"selected_group": 0,
 			"settings":
@@ -1210,7 +1484,8 @@
 				"copilot.conversation.group_id": -1,
 				"copilot.conversation.is_visible": false,
 				"copilot.conversation.is_waiting": false,
-				"copilot.conversation.last_active_view_id": 38,
+				"copilot.conversation.last_active_view_id": 15,
+				"copilot.conversation.model_id": "",
 				"copilot.conversation.original_layout": null,
 				"copilot.conversation.reference_block_state":
 				{
@@ -1226,12 +1501,12 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 198.0,
+			"side_bar_width": 264.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 41,
+			"window_id": 112,
 			"workspace_name": ""
 		}
 	],
