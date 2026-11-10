@@ -4,9 +4,34 @@ import json
 import time
 import threading
 import sys
+import os
 
-API_KEY = "apikey"
 USER = "Remlej9"
+
+
+def load_api_key():
+    """The key is kept out of the dotfiles repo: $LASTFM_API_KEY, or the first
+    line of ~/.config/lastfm/api_key (chmod 600)."""
+    key = os.environ.get("LASTFM_API_KEY", "").strip()
+    if key:
+        return key
+    path = os.path.join(os.environ.get("XDG_CONFIG_HOME", os.path.expanduser("~/.config")),
+                        "lastfm", "api_key")
+    try:
+        with open(path) as f:
+            return f.readline().strip()
+    except OSError:
+        return ""
+
+
+API_KEY = load_api_key()
+if not API_KEY:
+    # No key configured: show nothing instead of erroring in the bar
+    if len(sys.argv) > 1 and sys.argv[1] in ("--anim", "--text"):
+        print(json.dumps({"text": "", "tooltip": "Last.fm: no API key in ~/.config/lastfm/api_key"}), flush=True)
+        while True:
+            time.sleep(3600)
+    sys.exit(0)
 
 current_song = ""
 current_album = ""

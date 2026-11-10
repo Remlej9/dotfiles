@@ -1,37 +1,16 @@
- /* Colors (dracula) */
-@define-color foreground    #f8f8f2;
-@define-color background    rgba(40, 42, 54, 0.7);
-@define-color orange    #ffb86c;
-@define-color gray    #44475a;
-@define-color black #21222c;
-@define-color red    #ff5555;
-@define-color green    #50fa7b;
-@define-color yellow    #f1fa8c;
-@define-color cyan    #8be9fd;
-@define-color blue    #6272a4;
-@define-color purple    #bd93f9;
-@define-color pink    #ff79c6;
-@define-color white #ffffff;
-@define-color brred #ff6e6e;
-@define-color brgreen #69ff94;
-@define-color bryellow #ffffa5;
-@define-color brcyan #a4ffff;
-@define-color brblue #6272a4;
-@define-color brpurple #d6acff;
-@define-color brpink #ff92df;
-@define-color arch_blue #89b4fa;
-@define-color wtsd-red #ed4231;
-
-@define-color workspace_background    @background;
-@define-color workspace_button    @foreground;
-@define-color workspace_active    @black;
-@define-color workspace_active_background    @green;
-@define-color workspace_urgent    @white;
-@define-color workspace_urgent_background    @brred;
-@define-color workspace_hover    @black;
-@define-color workspace_hover_background    @pink;
-@define-color critical    @red;
-@define-color warning    @yellow; 
+/* Colors (Rem: same palette as kitty current-theme.conf, GTK theme "Rem",
+   wofi, swaync, sway borders) */
+@define-color background  rgba(22, 23, 24, 0.8);   /* kitty bg #161718 */
+@define-color foreground  #c4c8c5;
+@define-color bright      #eeeeee;
+@define-color dim         #7a7d7b;
+@define-color black       #161718;
+@define-color accent      #ed4231;                 /* sway focused border */
+@define-color cyan        #85befd;
+@define-color green       #86c38a;
+@define-color yellow      #ffd6b1;
+@define-color pink        #fc5ef0;
+@define-color white       #ffffff;
 
 * {
     font-family: "JetBrainsMono Nerd Font", "monospace";
@@ -39,11 +18,15 @@
     font-size: 11px;
 }
 
-window#waybar {
-    background: rgba(30, 30, 40, 0); /* Makes the main bar invisible so modules look like they float */
+/* Modules float as pills. The GTK theme (Rem) paints window/box backgrounds,
+   so both the window and its inner box must be cleared here. */
+window#waybar,
+window#waybar > box {
+    background: transparent;
+    background-color: transparent;
 }
 
-/* This styles the background blocks for your modules */
+/* Pill background for every module */
 #workspaces,
 #clock,
 #battery,
@@ -51,7 +34,7 @@ window#waybar {
 #memory,
 #network,
 #pulseaudio,
-#custom-fuzzel,
+#custom-launcher,
 #window,
 #temperature,
 #mode,
@@ -60,33 +43,44 @@ window#waybar {
 #custom-notification,
 #power-profiles-daemon,
 #custom-updates,
+#custom-tailscale,
 #custom-power {
     background: @background;
     color: @foreground;
-    padding: 0px 10px;
-    margin: 4px 2px;
-    border-radius: 8px; /* This gives the rounded "pill" look */
+    padding: 0px 12px;
+    margin: 4px 3px;
+    border-radius: 8px;
 }
 
+/* Hide the empty pill when no window is focused */
+window#waybar.empty #window {
+    background: transparent;
+}
+
+/* lastfm animation + text form one split pill */
 #custom-lastfm-anim {
     background: @background;
-    color: @foreground;
-    padding: 0px 10px;
-    margin: 4px 0px 4px 2px;
+    color: @white;
+    padding: 0px 8px 0px 12px;
+    margin: 4px 0px 4px 3px;
     border-radius: 8px 0px 0px 8px;
 }
 
 #custom-lastfm-text {
     background: @background;
     color: @foreground;
-    padding: 0px 10px;
-    margin: 4px 2px 4px 0px;
+    padding: 0px 12px 0px 4px;
+    margin: 4px 3px 4px 0px;
     border-radius: 0px 8px 8px 0px;
 }
 
-/* Specific colors for icons to match the online vibe */
-#custom-fuzzel { 
+#custom-launcher {
     font-size: 15px;
+    color: @accent;
+}
+
+#mode {
+    background: @accent;
     color: @white;
 }
 
@@ -94,28 +88,43 @@ window#waybar {
 #memory,
 #temperature,
 #disk { color: @cyan; }
-#clock { color: @white; }
-#custom-notification { color: @brpink; }
+#temperature.critical { color: @accent; }
+#clock { color: @bright; }
+#custom-notification { color: @pink; }
+#custom-updates { color: @yellow; }
 
-/* Workspace styling for Sway */
-#workspaces button {
-    color: @white;
-    padding: 0 5px;
+/* Workspaces */
+/* the pill gets a small inset so the buttons sit inside it instead of
+   running edge to edge */
+#workspaces {
+    padding: 0px 3px;
 }
 
-#workspaces button.active {
-    color: @white;
-    padding: 0 5px;
+#workspaces button {
+    color: @foreground;
+    padding: 0px 8px;
+    margin: 3px 1px;
+    border-radius: 6px;
+    /* the GTK theme gives every button a surface + border; not wanted here */
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    min-height: 0;
+    min-width: 0;
+}
+
+#workspaces button:hover {
+    background: rgba(238, 238, 238, 0.08);
+    box-shadow: none;
 }
 
 #workspaces button.focused {
     color: @white;
-    background: @wtsd-red;
-    border-radius: 5px;
+    background: @accent;
 }
 
 #workspaces button.urgent {
-    background: @green;
+    background: @yellow;
     color: @black;
 }
 
@@ -125,36 +134,31 @@ window#waybar {
 }
 
 #battery.warning:not(.charging) {
-    color: @warning;
+    color: @yellow;
 }
 
 #battery.critical:not(.charging) {
-    color: @critical;
+    color: @accent;
 }
 
-.connecting {
-  animation: pulse 0.8s ease-in-out infinite;
+/* Tailscale states (class comes from tailscale.sh) */
+#custom-tailscale.stopped   { color: @dim; }
+#custom-tailscale.exit-node { color: @green; }
+
+#custom-tailscale.connecting,
+#custom-tailscale.disconnecting {
+    animation: pulse 0.8s ease-in-out infinite;
 }
 
-#custom-tailscale {
-    background: @background;
-    padding: 0px 10px;
-    margin: 4px 2px;
+tooltip {
+    background: @black;
+    border: 1px solid #444444;
     border-radius: 8px;
 }
-
-.exit-node {
-    color: #00FF00;
-}
+tooltip label { color: @foreground; }
 
 @keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+    0%   { opacity: 1; }
+    50%  { opacity: 0.5; }
+    100% { opacity: 1; }
 }

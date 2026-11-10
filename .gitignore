@@ -1,2 +1,19 @@
-sublime-text/.config/sublime-text/Local/Auto Save Session.sublime_session sublime-text/.config/sublime-text/Local/Session.sublime_session
+# Python bytecode anywhere (e.g. waybar scripts)
+__pycache__/
+*.pyc
+
+# Sublime Text: only track user settings (Packages/User). Everything else is
+# downloaded or generated: Package Control reinstalls packages listed in
+# "Package Control.sublime-settings", and Lib/ holds their vendored Python deps.
+sublime-text/.config/sublime-text/*
+!sublime-text/.config/sublime-text/Packages/
+sublime-text/.config/sublime-text/Packages/*
+!sublime-text/.config/sublime-text/Packages/User/
+# contains the WakaTime API key
 sublime-text/.config/sublime-text/Packages/User/WakaTime.sublime-settings
+# Package Control caches / empty bundle
+sublime-text/.config/sublime-text/Packages/User/*.cache
+sublime-text/.config/sublime-text/Packages/User/Package Control.user-ca-bundle
+
+# kitty theme-picker backups
+kitty/.config/kitty/*.bak

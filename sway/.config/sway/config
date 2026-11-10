@@ -34,6 +34,7 @@ set $browser firefox --new-window
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /home/rem/Pictures/cyberpunk.png fill
 output * bg /home/rem/Pictures/whenthesummerdies_BG.png fill
+# output * bg /home/rem/Pictures/arch_BG2.jpg fill
 #
 # Example configuration:
 #
@@ -108,7 +109,7 @@ input * {
     bindsym $mod+b exec $browser
 
     # Custom programs
-    bindsym $mod+Shift+t tidal-hifi
+    bindsym $mod+Shift+t exec tidal-hifi
     bindsym $mod+period exec bemoji -t
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -121,21 +122,24 @@ input * {
     # Reload the configuration file
     bindsym $mod+Shift+c reload
 
-    # Sleep on lid close
-    bindswitch --locked lid:on exec systemctl suspend
+    # Lid: logind decides whether to suspend (it suspends when undocked and
+    # ignores the lid when external monitors are connected). Sway just turns
+    # the laptop panel off/on so workspaces move to the external screens.
+    bindswitch --reload --locked lid:on output eDP-1 disable
+    bindswitch --reload --locked lid:off output eDP-1 enable
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
-# Volume control
-bindsym XF86AudioRaiseVolume exec wpctl set-volume -l 1.0 \@DEFAULT_AUDIO_SINK@ 1%+
-bindsym XF86AudioLowerVolume exec wpctl set-volume \@DEFAULT_AUDIO_SINK@ 1%-
-bindsym XF86AudioMute exec wpctl set-mute \@DEFAULT_AUDIO_SINK@ toggle
-bindsym XF86AudioMicMute exec wpctl set-mute \@DEFAULT_AUDIO_SOURCE@ toggle
+# Volume control (--locked so they also work on the lock screen)
+bindsym --locked XF86AudioRaiseVolume exec wpctl set-volume -l 1.0 \@DEFAULT_AUDIO_SINK@ 1%+
+bindsym --locked XF86AudioLowerVolume exec wpctl set-volume \@DEFAULT_AUDIO_SINK@ 1%-
+bindsym --locked XF86AudioMute exec wpctl set-mute \@DEFAULT_AUDIO_SINK@ toggle
+bindsym --locked XF86AudioMicMute exec wpctl set-mute \@DEFAULT_AUDIO_SOURCE@ toggle
 
 # Screen Brightness Control
-bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 
 # Moving around:
 #
@@ -220,12 +224,21 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     # Move focus to the child container
     bindsym $mod+c focus child
 
-# Window Colors
+# Window Colors (Rem palette: kitty current-theme.conf / GTK theme "Rem")
+# indicator = where the next window will open; lighter red so it's visible
+# next to the border
 # class                 border  bground text    indicator child_border
-client.focused          #ed4231 #1793d1 #ffffff #000000   #ed4231
-client.focused_inactive #333333 #333333 #ffffff #484e50   #333333
-client.unfocused        #222222 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.focused          #ed4231 #ed4231 #ffffff #ff8a7d   #ed4231
+client.focused_inactive #444444 #444444 #eeeeee #444444   #444444
+client.unfocused        #222324 #121213 #7a7d7b #222324   #222324
+client.urgent           #ffd6b1 #ffd6b1 #161718 #ffd6b1   #ffd6b1
+client.background       #161718
+
+# Title bars (tabbed/stacked layouts)
+font pango:JetBrainsMono Nerd Font Bold 10
+
+# Cursor (same as GTK settings, also applies to XWayland apps)
+seat * xcursor_theme Adwaita 24
 
 #
 # Scratchpad:
@@ -263,22 +276,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+Shift+r exec ~/.config/sway/rotate.sh cw
-bindsym $mod+Control+r exec ~/.config/sway/rotate.sh ccw
-
-
 bindsym $mod+r mode "resize"
-#
-# Utilities:
-#
-    # Special keys to adjust volume via PulseAudio
-    bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
-    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
-    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
-    bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle21
-    # Special keys to adjust brightness via brightnessctl
-    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
-    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 #
 # Status Bar:
@@ -294,15 +292,21 @@ bindsym $mod+n exec swaync-client -t -sw
 # Screenshot region and edit with swappy
 bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 
-# Fix for browser file dialog
-exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+# Fix for browser file dialog. swaync is started by its systemd unit once the
+# environment is imported (its unit requires WAYLAND_DISPLAY); starting it
+# directly as well made the D-Bus-activated copy crash-loop.
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP && systemctl --user start swaync.service
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
-# Tell systemd the sway session has started
-exec systemctl --user start sway-session.target
+# Polkit agent (GUI password prompts)
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Lock before suspend (lid close, power menu) and on `loginctl lock-session`
+exec swayidle -w \
+    before-sleep 'swaylock -f' \
+    lock 'swaylock -f'
 
 exec iwgtk -i
-exec swaync
 
 exec whatpulse
 
@@ -314,11 +318,10 @@ for_window [app_id="(?i)whatpulse"] mark "wp", move scratchpad
 bindsym $mod+Shift+w [con_mark="wp"] scratchpad show
 
 # Start the clipboard manager daemon
-exec wl-paste --type text --watch cliphist store 
+exec wl-paste --type text --watch cliphist store
 exec wl-paste --type image --watch cliphist store
-exec wl-paste --type text --watch cliphist store 
 
-# Bind a key (e.g., Mod+V) to open the clipboard history
+# Mod+Shift+V opens the clipboard history
 bindsym $mod+Shift+v exec cliphist list | wofi --dmenu | cliphist decode | wl-copy
 
 # Lock screen

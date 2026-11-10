@@ -2,17 +2,16 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 0,
+    "height": 38, // pills = height minus their 4px top/bottom margin
     "spacing": 0,
     "margin-top": 2,
     "margin-left": 0,
     "margin-right": 0,
     // Choose the order of the modules
     "modules-left": [
-        "custom/fuzzel",
+        "custom/launcher",
         "tray",
         "sway/mode",
-        "custom/weather",
         "custom/lastfm-anim",
         "custom/lastfm-text",
         "sway/window",
@@ -30,94 +29,23 @@
         "memory",
         "disk",
         "battery",
-        "power-profiles-daemon",        
+        "power-profiles-daemon",
         "clock",
         "custom/notification",
         "custom/power"
     ],
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{windows}",
-    //     "format-window-separator": " |",
-    //     "window-rewrite-default": "",
-    //     "window-rewrite": {
-    //         "class<firefox>": "",
-    //         "class<kitty>": "",
-    //         "class<discord>": "",
-    //         "class<sublime_text>": "",
-    //         "class<org.telegram.desktop>": "",
-    //         "class<obsidian>": "",
-    //     }
-    // },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
-    },
-    "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-        "unknown-tag": "N/A",
-        "interval": 5,
-        "consume-icons": {
-            "on": " "
-        },
-        "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-        "disk": {
+    "disk": {
         "interval": 30,
         "format": "{free} 󰋊",
         "path": "/"
     },
     "tray": {
-        // "icon-size": 21,
-        "spacing": 10,
-        // "icons": {
-        //   "blueman": "bluetooth",
-        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
-        // }
+        "spacing": 10
     },
     "clock": {
-        // "timezone": "America/New_York",
         "interval": 1,
         "format": "{:%H:%M:%S}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -135,17 +63,13 @@
         "format": "{}% "
     },
     "temperature": {
-        "thermal-zone": 1,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        // CPU package sensor (coretemp "Package id 0"). Located by device path
+        // because hwmonN / thermal_zoneN numbers can change between boots.
+        "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
+        "input-filename": "temp1_input",
         "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "states": {
@@ -153,7 +77,7 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% {icon} 󱐋", // Adds a little bolt next to the icon
+        "format-charging": "{capacity}% {icon} 󱐋",
         "format-plugged": "{capacity}% ",
         "format-full": "{capacity}% 󰂄",
         "format-icons": {
@@ -164,9 +88,6 @@
                 "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
             ]
         }
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
     },
     "power-profiles-daemon": {
       "format": "{icon}",
@@ -180,7 +101,6 @@
       }
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} {ipaddr}/{cidr} via {gwaddr}",
@@ -189,7 +109,6 @@
         "on-click": "iwgtk"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -206,18 +125,6 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    },
-    "custom/media": {
-        "format": "{icon} {text}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/lastfm-anim": {
         "exec": "python3 $HOME/.config/waybar/scripts/lastfm.py --anim",
@@ -238,18 +145,19 @@
         "tooltip": false,
         "format": "{icon}",
         "format-icons": {
-          "notification": "<span foreground='red'><sup></sup></span>",
+          "notification": "<span foreground='#ed4231'><sup></sup></span>",
           "none": "",
-          "dnd-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-notification": "<span foreground='#ed4231'><sup></sup></span>",
           "dnd-none": "",
-          "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "inhibited-notification": "<span foreground='#ed4231'><sup></sup></span>",
           "inhibited-none": "",
-          "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-inhibited-notification": "<span foreground='#ed4231'><sup></sup></span>",
           "dnd-inhibited-none": ""
         },
         "return-type": "json",
         "exec-if": "which swaync-client",
         "exec": "swaync-client -swb",
+        "restart-interval": 2, // retry if swaync isn\'t up yet at login
         "on-click": "swaync-client -t -sw",
         "on-click-right": "swaync-client -d -sw",
         "escape": true
@@ -258,17 +166,16 @@
         "format" : "⏻ ",
 		"tooltip": false,
 		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+		"menu-file": "$HOME/.config/waybar/power_menu.xml",
 		"menu-actions": {
 			"shutdown": "systemctl poweroff",
 			"reboot": "systemctl reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
+			"suspend": "systemctl suspend"
 		}
     },
-    "custom/fuzzel": {
+    "custom/launcher": {
         "format": "  ",
-        "on-click": "wofi --show drun", // Changed from fuzzel to wofi since you use wofi
+        "on-click": "wofi --show drun",
         "tooltip": false
     },
     "custom/tailscale": {
@@ -289,11 +196,16 @@
         "interval": 5
     },
     "custom/updates": {
+        "hide-empty-text": true,
+        // Hidden while there are no updates (script prints empty text).
+        // SIGRTMIN+8 forces a re-check on every bar; the click action sends it
+        // once yay finishes: pkill -RTMIN+8 -x waybar
         "format": "{} 󰚰",
         "exec": "~/.config/waybar/scripts/updates.sh",
         "return-type": "json",
-        "interval": 3600, // Checks for updates every hour (in seconds)
-        "on-click": "kitty --hold -e yay -Syu", // --hold keeps the terminal open after updating
+        "interval": 3600,
+        "signal": 8,
+        "on-click": "kitty --hold -e sh -c 'yay -Syu; pkill -RTMIN+8 -x waybar'",
         "tooltip": true
     },
 }
